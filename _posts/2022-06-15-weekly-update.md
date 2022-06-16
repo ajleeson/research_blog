@@ -3,7 +3,7 @@
 This week I created a new idealized estuary grid and ran the model for 40 days.
 The new grid is straight with a parabolic cross section:
 
-<img src="alpeGrid.png" alt="alpeGrid" width="300"/>
+<img src="https://user-images.githubusercontent.com/15829099/174153784-2b0df591-2562-40b4-bf9d-9dc329c6c8c2.png" alt="alpeGrid" width="300"/>
 <img src="alpe3D.png" alt="alpe3D" width="300"/>
 
 I ran the model between 01/01/2020 through 02/10/2020 with the following forcing:
