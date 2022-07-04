@@ -5,8 +5,8 @@ This week I successfully extracted data from a mooring and created a timeseries 
 
 |Forcing | Model Input|
 |---|---|
-|River Flowrate|1000 cms|
-|Tidal Forcing| Includes spring-neap cycle (but no lunar wobble)|
+|River Flowrate|1000 m3 s-1|
+|Tidal Forcing| Includes spring-neap cycle|
 |Ocean Forcing| Estuary half fresh at t=0|
 |Atmospheric Forcing|Not implemented in this model|
 
