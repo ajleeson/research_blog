@@ -85,6 +85,10 @@ It looks like the model is doing something. Whether it's doing what I would expe
 
 Later on, I will still also need to add sunlight to the model.
 
+ <span style="color:red">
+07/05/2022 Update: It turns out that this model run was not reading the surface stress inputs.
+</span>
+
 ---
 ### Nutrients
 
