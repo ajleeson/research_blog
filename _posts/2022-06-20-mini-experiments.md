@@ -19,7 +19,6 @@ I'd also like to read literature as I work through these mini experiments. Readi
 
 MacCready, P., Banas, N. S., Hickey, B. M., Dever, E. P., & Liu, Y. (2009). A model study of tide-and wind-induced mixing in the Columbia River Estuary and plume. Continental Shelf Research, 29(1), 278-291.
 
-</br></br>
 
 ### 2. WWTP Nutrient Loading
 
@@ -27,7 +26,6 @@ MacCready, P., Banas, N. S., Hickey, B. M., Dever, E. P., & Liu, Y. (2009). A mo
 
 **Analysis:** For this analysis, I plan to "turn on" oxygen, phytoplankton, nitrate, etc. to track the biogeochemical impacts of nutrient loading.  
 
-</br></br>
 
 ### 3. Bottom Boundary Conditions
 
@@ -35,7 +33,6 @@ MacCready, P., Banas, N. S., Hickey, B. M., Dever, E. P., & Liu, Y. (2009). A mo
 
 **Analysis:** Compare set-up and results to other models such as SSM, 1-D biogeochemistry models, and the Peter-Parker model.
 
-</br></br>
 
 ### 4. Seasonal Variability
 
@@ -43,7 +40,6 @@ MacCready, P., Banas, N. S., Hickey, B. M., Dever, E. P., & Liu, Y. (2009). A mo
 
 **Analysis:** Look at changes to stratification and salinity between different seasons. Observe any differences in exchange flow velocities. Calculate estuarine Richardson number for the different seasons.
 
-</br></br>
 
 ### 5. Temperature Stratification
 
@@ -51,7 +47,6 @@ MacCready, P., Banas, N. S., Hickey, B. M., Dever, E. P., & Liu, Y. (2009). A mo
 
 **Analysis:** Observe changes to stratification, phytoplankton growth, and hypoxia.
 
-</br></br>
 
 ### 6. Proximity of WWTP to River
 
