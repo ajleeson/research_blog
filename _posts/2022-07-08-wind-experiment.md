@@ -83,20 +83,19 @@ The videos below show three-day (02/12/20 - 02/14/20) surface salinity and surfa
 
 When no wind is present, freshwater is mostly diverted toward the west as it exits the estuary. When there is a 6 m/s eastward wind, freshwater is diverted southeast as it exits the estuary. When there is a 6 m/s westward wind, freshwater is diverted towards the west and closely hugs the coast. These observations are consistent with what I would expect given Ekman transport diverting the flow slightly to the right from the directon of the wind.
 
-**No Wind Scenario** </br>
+**No Wind Scenario** 
 <video src="https://user-images.githubusercontent.com/15829099/178335075-d38e9bae-d02a-4fba-ba33-da4aee14ec71.mp4" controls="controls" style="max-width: 900px;">
 </video>
-</br></br>
 
-**Uwind = 6/ms Eastward** </br>
+
+**Uwind = 6/ms Eastward** 
 <video src="https://user-images.githubusercontent.com/15829099/178335104-efc5f6fd-c982-4044-bceb-878a04a9504e.mp4" controls="controls" style="max-width: 900px;">
 </video>
-</br></br>
 
-**Uwind = 6/ms Westward** </br>
+
+**Uwind = 6/ms Westward** 
 <video src="https://user-images.githubusercontent.com/15829099/178335111-b74265bf-6f9a-45a5-916e-fe2cb7d62f30.mp4" controls="controls" style="max-width: 900px;">
 </video>
-</br></br>
 
 
 The major issue with this model is that the open boundary conditions are influencing the model domain. Specifically, the open boundaries introduce colder water into the model domain because atmospheric forcing is not heating water outside of the model domain.
