@@ -7,11 +7,19 @@ Here is a list of proposed mini experiments I will conduct this summer using the
 
 I'd also like to read literature as I work through these mini experiments. Reading should help build context for these experiments and should help generate ideas for analysis and comparison. As the summer progresses, I will update this post with relevant citations.
 
+---
+
 ### 1. Constant Wind Stress
 
-**Changes to Forcing:** To model a constant wind stress, I will add atmospheric forcing to the idealized estuary. The wind stress will be along-channel (N-S).
+**Changes to Forcing:** To model a constant wind stress, I will add atmospheric forcing to the idealized estuary. The wind stress will be alongshore (E-W).
 
-**Analysis:** Calculate a tidally-averaged velocity profile and compare to the analytical velocity profile calculated in CEWA 570 (Hydrodynamics).
+**Analysis:** Calculate a tidally-averaged velocity profile and compare to the analytical velocity profile calculated in CEWA 570 (Hydrodynamics). Check whether wind induced upwelling or downwelling events.
+
+**References**
+
+MacCready, P., Banas, N. S., Hickey, B. M., Dever, E. P., & Liu, Y. (2009). A model study of tide-and wind-induced mixing in the Columbia River Estuary and plume. Continental Shelf Research, 29(1), 278-291.
+
+</br></br>
 
 ### 2. WWTP Nutrient Loading
 
@@ -19,11 +27,15 @@ I'd also like to read literature as I work through these mini experiments. Readi
 
 **Analysis:** For this analysis, I plan to "turn on" oxygen, phytoplankton, nitrate, etc. to track the biogeochemical impacts of nutrient loading.  
 
+</br></br>
+
 ### 3. Bottom Boundary Conditions
 
 **Changes to Forcing:** Modify sediment flux parameter.
 
 **Analysis:** Compare set-up and results to other models such as SSM, 1-D biogeochemistry models, and the Peter-Parker model.
+
+</br></br>
 
 ### 4. Seasonal Variability
 
@@ -31,11 +43,15 @@ I'd also like to read literature as I work through these mini experiments. Readi
 
 **Analysis:** Look at changes to stratification and salinity between different seasons. Observe any differences in exchange flow velocities. Calculate estuarine Richardson number for the different seasons.
 
+</br></br>
+
 ### 5. Temperature Stratification
 
 **Changes to Forcing:** Increase the temperature of the river inflow to simulate warming. Or possibly add solar radiation as a surface boundary condition.
 
 **Analysis:** Observe changes to stratification, phytoplankton growth, and hypoxia.
+
+</br></br>
 
 ### 6. Proximity of WWTP to River
 

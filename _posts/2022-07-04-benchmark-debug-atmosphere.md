@@ -43,7 +43,7 @@ For the last 2 weeks I have been attempting to run atmospheric forcing using BUL
 |---|---|---|
 | Pair | air pressure | 1013.25 mbar |
 |rain|rainfall rate| 0 kg m2 s-1|
-|lwrad_down|downwelling longwave radiation| 365 W m-2|
+|lwrad_down|downwelling longwave radiation| 300 W m-2|
 |Tair| air temperature| 10 C|
 |Qair| relative humidity| 83%|
 |Uwind*|E-W wind speed| 0 m s-1|
