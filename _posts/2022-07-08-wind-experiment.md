@@ -62,8 +62,8 @@ Tidal forcing is made up of a simple spring-neap cycle with a solar and a lunar 
 
 |Variable|Description|Value|
 |---|---|---|
-|tide_Eamp|tidal elevation amplitude|0.75 m (Lunar)</br> 0.25 m (Solar)|
-|tide_period|tidal period|12.42 hrs (Lunar)</br> 12 hrs (Solar)
+|tide_Eamp|tidal elevation amplitude|0.75 m (Lunar); 0.25 m (Solar)|
+|tide_period|tidal period|12.42 hrs (Lunar); 12 hrs (Solar)
 
 **River Forcing**
 
