@@ -26,8 +26,7 @@ The main steps of the algorithm are to
 
 The reason why step 6 is necessary is because the grid cells may not all be the same size. As illustrated in Figure 2, it is possible for the nearest coastal grid cell to be several rings away, even if there are coastal grid cells in closer rings.
 
-[picutre here]
-
+<p style="text-align:center;"><img src="https://user-images.githubusercontent.com/15829099/180850331-96deab88-2345-493a-8a02-d15caf488d5a.png" width="750"/><br>Fig 2. Nearest coastal grid cell is two rings away, despite the WWTP having a coastal grid cell in the adjacent ring.</p><br><br>
 ### Summary of Changes
 
 The required changes for this algorithm to work are documented below. Note that I copied all files from LO/pgrid into LO_user/pgrid and modified them within LO_user.
