@@ -50,3 +50,8 @@ I have checked all of the forcing inputs, and they are 10 C everywhere for all t
 It is also interesting that there seems to be a larger anomaly near the surface (ie. warmest and coldest points are at the surface). I checked the analytical surface fluxes, and there is zero surface heat flux.There is zero bottom heat flux too.
 
 I've exhausted all of my hypotheses at this point. The next step is to browse the ROMS forums and see if anyone else has encountered a similar issue.
+
+---
+## Update:
+
+There was an issue in the ROMS source code. After updating ROMS, recompiling, and re-running the model, the temperature anomalies have dissappeared.
