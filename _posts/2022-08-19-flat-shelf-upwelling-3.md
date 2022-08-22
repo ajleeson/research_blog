@@ -57,6 +57,7 @@ $$g' = g \frac{\Delta\rho}{\rho}$$
 , and<br>
 $$\lambda = \frac{\sqrt{g'H}}{f}$$
 <br>
+
 ---
 ### Interface Vertical Displacement
 
