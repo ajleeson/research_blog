@@ -41,7 +41,7 @@ The following table lists the ocean forcing used in this model. The ocean does n
 
 The resulting salinity and density profiles are shown in Figure 2. 
 
-<p style="text-align:center;"><img src="https://user-images.githubusercontent.com/15829099/183492005-97108683-1aa6-4b30-8b9d-c0e5f72ab7ff.png" width="400"/><br>Fig 2. Initial ocean salinity and temperature.</p>
+<p style="text-align:center;"><img src="https://user-images.githubusercontent.com/15829099/183492005-97108683-1aa6-4b30-8b9d-c0e5f72ab7ff.png" width="400"/><br>Fig 2. Initial ocean salinity and density.</p>
 
 The salinity and/or temperature of the ocean can easily be changed in the future as needed. I am still learning about the physics of upwelling and have not yet decided on values to use for an extended model run.
 
