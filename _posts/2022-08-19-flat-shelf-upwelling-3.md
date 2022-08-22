@@ -39,20 +39,24 @@ Figure 4 shows a schematic of the problem.
 
 Using the derivation that Parker shared and following along with Gill, analytical solutions for a two-layer upwelling problem are:
 
-*Interface Vertical Displacement*
+*Interface Vertical Displacement*<br>
 $$\boxed{\zeta = \frac{FH}{f\lambda}\ t\ e^{-y/\lambda}}$$
 
-*Upper Layer Cross-shore Velocity*
+*Upper Layer Cross-shore Velocity*<br>
 $$\boxed{v=\frac{F}{f}\Big(1-e^{-y/\lambda}\Big)}$$
 
-*Upper Layer Along-shore Velocity*
+*Upper Layer Along-shore Velocity*<br>
 $$\boxed{u=F\ t\ e^{-y/\lambda}}$$
 
-where
+where<br>
 $$y = \text{distance from shore}$$
+,<br>
 $$F = \frac{\tau_{\text{wind}}}{\rho H}$$
+,<br>
 $$g' = g \frac{\Delta\rho}{\rho}$$
+, and<br>
 $$\lambda = \frac{\sqrt{g'H}}{f}$$
+<br>
 ---
 ### Interface Vertical Displacement
 
