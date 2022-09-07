@@ -91,13 +91,13 @@ Later on, I will still also need to add sunlight to the model.
 
 <br>
 
-<b>09/07/2022 Update:</b> I later ran an experiment in which I correctly applied a wind stress using sustr and svstr. This is experiment is described in the Flat Shelf Upwelling series (links to blog posts below). Part 2 of the experiment provides details of how I used sustr and svstr to create a wind stress. 
+<b>09/07/2022 Update:</b> I later ran an experiment in which I correctly applied a wind stress using sustr and svstr. This is experiment is described in the Flat Shelf Upwelling series (links to blog posts below). Part 2 of the experiment provides details of how I used sustr and svstr to create a wind stress.
+
+</span>
 
 - [Part 1](https://ajleeson.github.io/research_blog/2022/07/18/flat-shelf-upwelling-part-1.html) goes over initial attempt
 - [Part 2](https://ajleeson.github.io/research_blog/2022/08/08/flat-shelf-upwelling-2.html) goes over experiment setup
 - [Part 3](https://ajleeson.github.io/research_blog/2022/08/19/flat-shelf-upwelling-3.html) goes over model results and comparison to analytical results
-
-</span>
 
 ---
 ### Nutrients
