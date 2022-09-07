@@ -6,7 +6,7 @@
 
 This week I tested the run speed on klone with different cores using the idealized estuary model that I have been running. The results are shown below.
 
-<p style="text-align:center;"><img src="https://user-images.githubusercontent.com/15829099/177211951-884f7e6a-b6ef-4e3a-9f06-e546d6893d4f.png" alt="benchmark-results" width="475"/></p>
+<p style="text-align:center;"><img src="https://user-images.githubusercontent.com/15829099/188946862-ae22bccf-cf3a-4a38-897e-3dc93b12e79d.png" alt="benchmark-results" width="475"/></p>
 
 Previously, I had been running with 40 cores. Using 80 cores reduces the run time for each day from 8:40 to 5:40. Moving forward, I will run the idealized estuary model with 80 cores.
 
@@ -86,7 +86,15 @@ It looks like the model is doing something. Whether it's doing what I would expe
 Later on, I will still also need to add sunlight to the model.
 
  <span style="color:red">
-07/05/2022 Update: It turns out that this model run was not reading the surface stress inputs.
+
+**07/05/2022 Update**: It turns out that this model run was not reading the surface stress inputs. 
+<br><br>
+
+**09/07/2022 Update:** I later ran an experiment in which I correctly applied a wind stress using sustr and svstr. This is experiment is described in the Flat Shelf Upwelling series (links to blog posts below). Part 2 of the experiment provides details of how I used sustr and svstr to create a wind stress. 
+- [Part 1](https://ajleeson.github.io/research_blog/2022/07/18/flat-shelf-upwelling-part-1.html) goes over initial attempt
+- [Part 2](https://ajleeson.github.io/research_blog/2022/08/08/flat-shelf-upwelling-2.html) goes over experiment setup
+- [Part 3](https://ajleeson.github.io/research_blog/2022/08/19/flat-shelf-upwelling-3.html) goes over model results and comparison to analytical results
+
 </span>
 
 ---
