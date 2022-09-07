@@ -86,11 +86,10 @@ It looks like the model is doing something. Whether it's doing what I would expe
 Later on, I will still also need to add sunlight to the model.
 
  <span style="color:red">
-07/05/2022 Update: It turns out that this model run was not reading the surface stress inputs. 
-
-09/07/2022 Update: I later ran an experiment in which I correctly applied a wind stress using sustr and svstr. This is experiment is described in the Flat Shelf Upwelling series (links to blog posts below). Part 2 of the experiment provides details of how I used sustr and svstr to create a wind stress.
-
-</span>
+<b>07/05/2022 Update:</b> It turns out that this model run was not reading the surface stress inputs.</span> 
+<br>
+ <span style="color:red">
+<b>09/07/2022 Update:</b> I later ran an experiment in which I correctly applied a wind stress using sustr and svstr. This is experiment is described in the Flat Shelf Upwelling series (links to blog posts below). Part 2 of the experiment provides details of how I used sustr and svstr to create a wind stress.</span>
 
 - [Part 1](https://ajleeson.github.io/research_blog/2022/07/18/flat-shelf-upwelling-part-1.html) goes over initial attempt
 - [Part 2](https://ajleeson.github.io/research_blog/2022/08/08/flat-shelf-upwelling-2.html) goes over experiment setup
