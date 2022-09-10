@@ -1,6 +1,6 @@
 ## Nutrients Mini Experiment (Part 1)
 
-This week I have made some progress using the idealized estuary to compare bottom DO with and without nutrients in WWTP effluent. There is more analysis work I can do later one, and I have some questions about my boundary conditions. However, I wanted to document and share the current experiment status prior to my trip.
+This week I have made some progress using the idealized estuary to compare bottom DO with and without nutrients in WWTP effluent. There is more analysis work I can do later on, and I have some questions about my boundary conditions. However, I wanted to document and share the current experiment status prior to my trip.
 
 For this experiment, I have been using the grid I developed when writing the WWTP placement algorithm ([documentation in prior blog post](https://ajleeson.github.io/research_blog/2022/07/25/WWTP-PointSource-Algorithm.html)). As a reminder, Figure 1 shows the model grid and locations of point sources.
 
@@ -13,13 +13,13 @@ More details about the initial conditions, model spin-up, preliminary results, a
 ---
 ## Model Spin-Up Initial Conditions
 
-I used four types of forcing during the model spin-up: ocean, atmospheric, tidal, and river forcing. The river forcing indluces forcing conditions for both the river and WWTPs.
+I used four types of forcing during the model spin-up: ocean, atmospheric, tidal, and river forcing. The river forcing includes forcing conditions for both the river and WWTPs.
 
 ### Ocean Forcing
 
 The values used for ocean forcing are listed below. With the exception of salinity, the ocean forcing variables are constants.
 
-The value of variables not listed in the table are is zero (e.g. free surface height or ammonium concentration).
+The value of non-listed variables is zero (e.g. free surface height or ammonium concentration).
 
 | Variable      | Description               | Value     | Notes|
 | ---           | ---                       | ---       | ---  |
@@ -110,13 +110,61 @@ The next video shows the daily surface phytoplankton and bottom DO from the 2-mo
 " controls="controls" style="max-width: 700px;">
 </video><br></p>
 
-The phytoplankton grow very quickly at first, and then suddenly dissappear (I am guessing due to zooplankton population boom). Afterwards, the phytoplankton concentration is low and remains quite low. After the mass phytoplankton consumption, a large hypoxic region develops away from the coast. Near the coast, the river appears to introduce oxygen in the water. There also appears to be more oxygen near the WWTP locations.
+The phytoplankton grow very quickly during the first two weeks, and then suddenly dissappear (I am guessing due to a zooplankton population boom). Afterwards, the phytoplankton concentration is low and remains quite low. After the mass phytoplankton die-off, a large hypoxic region develops away from the coast. Near the coast, the river appears to introduce oxygen to the water. There also appears to be more oxygen near the WWTP locations.
 
 ---
 ## Forcing for Experimental Conditions
 
+As mentioned earlier, I ran two experimental conditions for one month using the spin-up results above.
+
+The first condtion is the base case, and is really just a continuation of the spin-up set up. Nothing was changed in the forcing files.
+
+The second condition is the nutrient condition. In this case, I changed the concentration of nitrate in the WWTP effluent from 0 to **344 mmol N m-3**. Again, this value is the average nitrate concentration for West Point treatment plant reported in Ecology's dataset. No other values were changed in the forcing files.
+
 ---
 ## Preliminary Results
 
+**Base Case: No Nutrients in WWTP Effluent**
+
+Below is a daily movie of surface phytoplankton and bottom DO for the base case. In general, new phytoplankton are only growing near the river. The concentration of phytoplankton in the ocean is roughly zero, and new phytoplankton do not appear to grow in the ocean.
+
+<p style="text-align:center;"><video src="https://user-images.githubusercontent.com/15829099/189467804-3324c8c1-d088-4b5c-87d1-fba6f1e21a00.mp4
+" controls="controls" style="max-width: 600px;">
+</video><br></p>
+
+**Nutrient Condition: DIN in WWTP Effluent**
+
+The video below shows the surface phytoplankton and bottom DO for the nutrient condition. This video looks very similar to the one above, except that there are more phytoplankton growing near the coastal WWTPs.
+
+<p style="text-align:center;"><video src="https://user-images.githubusercontent.com/15829099/189467877-f74154e8-edd4-4f86-b954-80ffd569f97d.mp4
+" controls="controls" style="max-width: 600px;">
+</video><br></p>
+
+**Comparison**
+
+As a preliminary comparison method, I took a look at the final hour of this model run.
+
+Figure 4 compares the final hour surface phytoplankton from both model runs.
+
+<p style="text-align:center;"><img src="https://user-images.githubusercontent.com/15829099/189468101-17f484b3-6a14-4041-a5b2-09316e78c64b.png" width="400"/><br>Fig 4. Final hour comparison of surface phytoplankton.</p><br><br>
+
+Figure 5 compares the final hour bottom DO from both model runs.
+
+<p style="text-align:center;"><img src="https://user-images.githubusercontent.com/15829099/189468714-9380308e-7e39-4a76-8a48-2e363818208e.png" width="400"/><br>Fig 5. Final hour comparison of bottom DO.</p><br><br>
+
+In general, the with-nutrients conditions has more phytoplankton near the point sources than the no-nutrient base case.
+
+The with-nutrients condition also appears to have a higher bottom DO concentration near the coastal WWTPs than the no-nutrient base case. This may be due to more phytoplankton growing near the WWTPs and producing more oxygen.
+
+I am slightly confused why there is less oxygen near the in-ocean WWTP. There does not appear to be much phytoplankton growing near this WWTP.
+
+My best guess for what may be going on is that near the in-ocean WWTP, the WWTP enables some phytoplankton to grow from the very small model spin-up phytoplankton population. Because the new growth has a relatively low concentration, it gets consumed and dies off quickly. The lower DO in this area is thus the result of these additional phytoplankton decomposing. In contrast, the coastal WWTPs have a larger initial phytoplankton population to grow from. Additionally, the water depth is shallower near the coast, so nitrate may be more readily available for uptake at the surface. Because of this, more phytoplankton may be growing than dying near the coastal WWTPs. This could explain why bottom DO concentration is actually greater near the coastal WWTPs in the with-nutrients case. I am curious if I let the model run for longer whether these near-coast phytoplankton populations will eventually contribute to lower bottom DO concentrations as well.
+
+Nevertheless, my explanations remain speculative for now. I am looking forward to exploring these questions further in additional idealized model analyses or using LiveOcean!
+
 ---
 ## Boundary Condition Questions
+
+For all biogeochemistry state variables, I applied the Gradient boundary condition to the open boundaries. This means that the gradient of the variable is zero at the boundary, and the inflowing value is thus equal to the nearest within-domain value.
+
+I am concerned that this may not be the most appropriate boundary condition for this model run. In particular, once all of the phytoplankton dies off and nitrate gets used up along the boundary, no more nutrients will be introduced from the ocean and no more phytoplankton can grow. I am guessing this is a large reason why very few phytoplankton seem to grow near the WWTP located in the ocean. Maybe it would be better to allow more nutrients and phytoplankton enter the domain from the ocean.
