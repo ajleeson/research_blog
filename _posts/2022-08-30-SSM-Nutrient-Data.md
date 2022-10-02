@@ -34,17 +34,17 @@ Both point and nonpoint source files provide data for the same variables. Howeve
 |Dissolved organic nitrogen     |  DON(mg/L)     | |
 |Particulate organic nitrogen   |  PON(mg/L)     | |
 |Dissolved organic phosphorus   |  DOP(mg/L)     | |
-|Particulate organic phosphorus | POP(mg/L)      | |
-|  |  POCS(mg/L)    | |
-|  |  POCF(mg/L)    | |
-|Refractory Particulate Organic Carbon (?)  |  POCR(mg/L)    | |
-|  |  sDOC(mg/L)    |DOCS(mg/L) |
-|  | fDOC (mg/L)    |DOCF(mg/L) |
+|Particulate organic phosphate  | POP(mg/L)      | |
+|Particulate organic carbon (labile or refractory?)  |  POCS(mg/L)    | |
+|Particulate organic carbon (labile or refractory?)  |  POCF(mg/L)    | |
+|Particulate organic carbon (refractory)  |  POCR(mg/L)    | |
+|Dissolved organic carbon (labile or refractory?) |  sDOC(mg/L)    |DOCS(mg/L) |
+|Dissolved organic carbon (labile or refractory?)  | fDOC (mg/L)    |DOCF(mg/L) |
 |Algae species 1 Diatoms        |  Diatoms       | |
 |Algae species 2 Dinoflagellates|  Dinoflag      | |
 |  |  Chlorophyll   | |
 |Dissolved inorganic carbon     | DIC(mmoles/m3) | |
-|Alkalinity                     | Alk(mmoles/m3) | |
+|Total Alkalinity               | Alk(mmoles/m3) | |
 
 <br>
 
