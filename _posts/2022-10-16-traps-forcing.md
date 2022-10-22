@@ -21,7 +21,7 @@ Note that I wasn't concerned about the WWTP locations for a few reasons:
 2. WWTPs don't have an orientation since they are vertical momentum sources (rather than horizontal).
 3. WWTPs use the same algorithm that I wrote over the summer, which I had tested with some simple test cases.
 
-After fixing the rivers, I created a forcing file with 5 $m^3 s^{-1}$ transport for all rivers, and 4.5 $m^3 s^{-1}$ transport for all marine point sources. Parker helped test the forcing on LiveOcean, and it worked. Now I can work on fixing the other details.
+After fixing the rivers, I created a forcing file with 5 m3 s-1 transport for all rivers, and 4.5 m3 s-1 transport for all marine point sources. Parker helped test the forcing on LiveOcean, and it worked. Now I can work on fixing the other details.
 
 ---
 ## Next Steps (ie. the other details that I need to fix)
