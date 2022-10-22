@@ -2,7 +2,7 @@
 
 This week I finished creating TRAPS climatology. There are a few loose ends that I'll need to tie up later. Otherwise, I am at the point where I can now add real flow/temperature/nutrient values to TRAPS in LiveOcean.
 
-For all TRAPS I have climatology for flow, temperature, nitrate, ammonium, total inorganic carbon, total alkalinity, and dissolved oxygen. 
+All TRAPS climatology for flow, temperature, nitrate, ammonium, total inorganic carbon, total alkalinity, and dissolved oxygen. 
 
 All of the generated climatology files follow the same naming convention and have the same layout as current LiveOcean river climatology files.
 
@@ -11,23 +11,23 @@ In general, creating climatology files took me much longer than I anticipated. F
 ---
 ## River Climatology
 
-Ecology's timeseries provided daily values for each river. Using Pandas' groupby function it was easy to averages based on date to create a one-year average profile.
+Ecology's timeseries provided daily values for each river. Using Pandas' groupby function, it was easy to calculate averages based on date to create a one-year profile.
 
 To handle leap years, the groupby function averages all year for which there is data on February 29th. In other words, the average Feb 29th values are computed from a much smaller sample size than the other days of the year.
 
-The main problem I had with leap years actually came while I was checking my work. I tried to plot the climatology average on the same figure as all individual years' data. The issue is that 1/4 of the years have 366 days, and the other years had 365 days. In the end, I padded non-leap years with nan values on Feb 29th. 
+The main problem I had with leap years actually arose while I was checking my work. I tried to plot the climatology average on the same figure as all individual years' data. The issue is that 1/4 of the years have 366 days, and the other years have 365 days. In the end, I padded non-leap years with nan values on Feb 29th.
 
-Some examples of the resulting climatology timeseries are shows in Figures 1 - Figure 4 for Union River. Note that Union River is called "Lynch Cove" in Ecology's timeseries data. 
+Some examples of the resulting climatology timeseries are shown in Figures 1 - 4 for Union River. Note that Union River is called "Lynch Cove" in Ecology's timeseries data.
 
-<p style="text-align:center;"><img src="https://user-images.githubusercontent.com/15829099/197361710-924f56c3-d7a0-4c66-9a38-4a79d310bae0.png" width="600"/><br>Fig 1. Union River flowrate climatology plotted with individual year flowrate values.</p><br>
+<p style="text-align:center;"><img src="https://user-images.githubusercontent.com/15829099/197361710-924f56c3-d7a0-4c66-9a38-4a79d310bae0.png" width="600"/><br>Fig 1. Union River flowrate climatology plotted with individual year values.</p><br>
 
-<p style="text-align:center;"><img src="https://user-images.githubusercontent.com/15829099/197361732-dc40fed5-6fe2-4255-bb4b-67720c31e54e.png" width="600"/><br>Fig 2. Union River temperature climatology plotted with individual year flowrate values.</p><br>
+<p style="text-align:center;"><img src="https://user-images.githubusercontent.com/15829099/197361732-dc40fed5-6fe2-4255-bb4b-67720c31e54e.png" width="600"/><br>Fig 2. Union River temperature climatology plotted with individual year values.</p><br>
 
-<p style="text-align:center;"><img src="https://user-images.githubusercontent.com/15829099/197361780-4fcce141-0167-41fe-91da-25454575a12a.png" width="600"/><br>Fig 3. Union River nitrate climatology plotted with individual year flowrate values.</p><br>
+<p style="text-align:center;"><img src="https://user-images.githubusercontent.com/15829099/197361780-4fcce141-0167-41fe-91da-25454575a12a.png" width="600"/><br>Fig 3. Union River nitrate climatology plotted with individual year values.</p><br>
 
-<p style="text-align:center;"><img src="https://user-images.githubusercontent.com/15829099/197361972-31f007cc-ebbe-4e7c-9408-e18acae67c17.png" width="600"/><br>Fig 4. Union River dissolved oxygen climatology plotted with individual year flowrate values.</p><br>
+<p style="text-align:center;"><img src="https://user-images.githubusercontent.com/15829099/197361972-31f007cc-ebbe-4e7c-9408-e18acae67c17.png" width="600"/><br>Fig 4. Union River dissolved oxygen climatology plotted with individual year values.</p><br>
 
-The purpose of these plots was really to build confidence that I averaged correctly. After this point, it was easy relatively straightforward to save the climatology files. The main nuance was converting from Ecology's units to units expected by LiveOcean. Unit conversions are listed in the table below.
+The purpose of these plots was really to build confidence that I averaged correctly. After this point, it was relatively straightforward to save the climatology files. The main nuance was converting from Ecology's units to units expected by LiveOcean. Unit conversions are listed in the table below.
 
 | Variable  | Ecology Units | LiveOcean Units   | Conversion, C <br> [LiveOcean] = C*[Ecology]  |
 | ---       | ---           | ---               | ---   |
@@ -52,7 +52,7 @@ Eventually, I was able to fill in the missing days using a constant value across
 
 Brightwater is an interesting case because this WWTP did not exist prior to 2011. Ecology's timeseries thus lists zero flow prior to 2011. I padded all of these zero values with nans and calculated means ignoring nans. This way, zero values will not bias the climatology values downwards.
 
-This climatology file works for Brightwater after the year 2011. However, it **only** makes sense to use Brightwater climatology after 2011. I will later need to implement a check for when each WWTP came online, and then decide whether or not to add the WWTP to LiveOcean for a given year.
+This climatology file works for Brightwater after the year 2011. However, it **only** makes sense to use Brightwater climatology after 2011. I will later need to implement a check for when each WWTP came online, and then decide whether or not to add the WWTP to LiveOcean for a given year. I'll need to implement the reverse check for WWTPs that may have shut down after a certain year.
 
 Another similar issue is how to handle WWTPs that may have upgraded their treatment process. Right now, the climatology generation is blindly averaging values from both before and after the upgrade. What I should do instead is create two different climatologies for before and after the upgrade.
 
@@ -74,4 +74,4 @@ Last week I put together a list of unresolved issues with TRAPS integration. I w
 - [ ] Determine from which sigma layer each marine point source should discharge, and how to translate this information into the ROMS variable, river_Vshape
 - [X] (2022.10.22) Think about how to handle forecasting?
   - handled by using climatology files
-- [ ] *Figure out how to handle climatology for WWTPs that came online after certain year, or upgraded treatment type after certain year*
+- [ ] *Figure out how to handle climatology for WWTPs that opened after certain year, shut down after certain year, or upgraded treatment type after certain year*
