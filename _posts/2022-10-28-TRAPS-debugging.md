@@ -1,4 +1,4 @@
-## TRAPS Debugging
+## Running TRAPS on LiveOcean
 
 This week I ran LiveOcean for one day as-is, I created ROMS forcing using the TRAPS climatology, and I tried to run LiveOcean for one day with TRAPS forcing. With TRAPS forcing, ROMS blew up on hour 21 of the day, and I have yet to debug what went wrong.
 
