@@ -30,9 +30,9 @@ What is it about the Birch Bay treatment plant that caused ROMS to blow up? Noth
 
 <p style="text-align:center;"><img src="https://user-images.githubusercontent.com/15829099/200236465-2b4700f1-4c76-48d8-b424-181b00f5e7a3.png" width="600"/><br>Fig 5. Select WWTP flowrate profiles, including Birch Bay. Apologies for the quality of the plot-- it's a single subplot in a large figure I have saved on my computer. Calendar day is on the x-axis. Flowrate (m3/s) is on the y-axis.</p><br>
 
-This upcoming week, I'm planning to conduct a detailed review of all climatology and forcing profiles I have created. Identifying the blow up issue felt *too* easy, and I suspect that there are several underlying issues that I have yet to dig up. Understanding why the Birch Bay treatment plant will be a good starting point for this audit.
+This upcoming week, I'm planning to conduct a detailed review of all climatology and forcing profiles that I have created. Identifying the blow up issue felt *too* easy, and I suspect that there are several underlying issues that I have yet to dig up. Understanding issues with the Birch Bay treatment plant will be a good starting point for this audit.
 
-I also want to note that I ran LiveOcean with TRAPS for *only* one-day. I would not be surprised if the ROMS might still blow-up after a few more days. All in all, quite a bit of debugging left to do, but I'm happy to have made some progress so far.
+I also want to note that I ran LiveOcean with TRAPS for *only* one-day. I would not be surprised if ROMS might still blow-up after a few more days. All in all, there is still quite a bit of debugging left to do, but I'm happy to have made some progress so far.
 
 ---
 ## TRAPS Integration Checklist
