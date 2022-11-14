@@ -23,7 +23,7 @@ To test whether something is inherently weird about Birch Bay WWTP inputs, I ran
 The table below summarizes all LiveOcean experiments I have conducted so far.
 
 **Summary of Experiments to Date**
-| Run # | Condition         | Abbreviated Name  | One-Day Run Result    |
+| Run | Condition         | Abbreviated Name  | One-Day Run Result    |
 |---    | ---               | ---               | ---                   |
 | 1     | LiveOcean as is   | as-is             |Success               |
 | 2     | LiveOcean with TRAPS | with-TRAPS | ROMS blows up      |
