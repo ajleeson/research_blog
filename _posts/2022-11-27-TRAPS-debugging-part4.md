@@ -11,7 +11,7 @@ Unfortunately, I'm leaving us on a cliffhanger this week-- I still haven't teste
 
 I will also note that in addition to Birch Bay, there are four other sources in which a river and WWTP share the same name:
 Port Angeles, Port Townsend, Port Gamble, and Gig Harbor.
-I will add an "R" at the end of the river counterparts for these pair of sources as well.
+I will add an "R" at the end of the river counterpart of these pairs of sources as well.
 
 ---
 ## TRAPS Integration Checklist
