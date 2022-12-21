@@ -34,11 +34,11 @@ I did a bit of work compiling averages for the point source and nonpoint source 
 
 <p style="text-align:center;"><img src="https://user-images.githubusercontent.com/15829099/207200794-afefda64-0f21-4fc0-98ea-acd5509bc895.png" width="700"/><br>Fig 3. Average climatology for all point sources.</p><br>
 
-<p style="text-align:center;"><img src="https://user-images.githubusercontent.com/15829099/207488297-1f58d99d-24df-4c0f-95ca-7f9ee982e35f.png" width="700"/><br>Fig 4. Average climatology for all nonpoint sources (rivers).</p><br>
+<p style="text-align:center;"><img src="https://user-images.githubusercontent.com/15829099/208981106-566997f6-6184-43b2-8416-27142192fef6.png" width="700"/><br>Fig 4. Average climatology for all nonpoint sources (rivers).</p><br>
 
 Figure 5 shows a zoomed-in image of average river flowrate.
 
-<p style="text-align:center;"><img src="https://user-images.githubusercontent.com/15829099/207488472-34cb17c7-0dfd-408a-9faa-882ab4aff7ff.png" width="400"/><br>Fig 5. Average river flowrate for all nonpoint sources (rivers).</p><br>
+<p style="text-align:center;"><img src="https://user-images.githubusercontent.com/15829099/208981117-ee651755-1531-4c3e-b2ce-7fad5424856d.png" width="400"/><br>Fig 5. Average river flowrate for all nonpoint sources (rivers).</p><br>
 
 In a prior blog post, I discussed that some rivers in Ecology's dataset have strange biogeochemistry profiles. An example of Tsitika River is shown in Figure 6. I omitted these weird rivers when calculating the average nonpoint source (river) climatology.
 
@@ -51,7 +51,7 @@ The original Tsitika River climatology is shown in Figure 6. Tsitika river is on
 
 The flowrate for the weird rivers do look reasonable, however. Thus, I replaced the weird river biogeochemistry values with the average river climatology discussed in the prior section. River flowrate and temperature were kept the same. The new, resulting Tsitika River climatology is shown in Figure 7.
 
-<p style="text-align:center;"><img src="https://user-images.githubusercontent.com/15829099/207489593-d2c0c6b5-f5b0-47db-a173-89a5bdd1297d.png" width="650"/><br>Fig 7. New Tsitika River climatology values after replacing strange values with average climatology for other rivers.</p><br>
+<p style="text-align:center;"><img src="https://user-images.githubusercontent.com/15829099/208981125-9d884678-fc65-40a9-8468-0f6b6eed74cb.png" width="650"/><br>Fig 7. New Tsitika River climatology values after replacing strange values with average climatology for other rivers.</p><br>
 
 There is still room for improvement here. First, I'd like to show Tsitika River flow profiles for all years like is shown in Figure 6. It just happens that the order that I wrote my code does not make it easy to plot flow values for individual years after replacing biogeochemistry values with the average climatology of all rivers. Maybe there's an opportunity for code optimization/restructuring here.
 
