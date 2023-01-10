@@ -88,6 +88,7 @@ The tl;dr is that I need to explore this further. Despite my confusion, I'm exci
 
 **Completed Items**
 
+- (2023.01.06) Add Ecology's biogeochemistry data to pre-existing LiveOcean rivers
 - (2022.12.31) Handle river mouths that get placed at the same coastal grid cell. Maybe combine the flows?
 - (2022.12.28) Clean up TRAPS integration code and push update to Github
 - (2022.12.26) Run LiveOcean for two days with the weird rivers added back in (now that their biogeochemistry values have been replaced with the mean climatology values)
