@@ -8,7 +8,7 @@ Rather than discharging solely to the bottom sigma layer, this week I tested dis
 
  Later on I realized that re-initializing a run as a *continuation* vs a *perfect restart* changes whether ROMS does or does not crash at Oak Harbor Lagoon WWTP. Thus, it is inconclusive whether redistributing point source discharge actually resolves blowup problems. Repeat-tests are required.
 
-# Summary since last KC update
+## Summary since last KC update
 
 When we last met with KC, I had shared that I was able to add TRAPS (tiny rivers and point sources) to the LiveOcean grid. For each of these sources, I also generated an average year-long climatology profile for flowrate, temperature, and biogeochemistry variables. Figure 1 shows summary statistics for tiny river climatology. The left panel in Figure 2 shows the location of point sources on the LiveOcean grid.
 
@@ -22,9 +22,9 @@ Despite this progress, I still have not run LiveOcean for a year and come up wit
 
 Afterwards, I attempted a yearlong (2021) LiveOcean run with TRAPS. The model ran smoothly for 1.5 months but then blew up on February 19th at the Oak Harbor Lagoon WWTP. This blowup had similar symptoms to the Birch Bay WWTP blowup, with massive spikes in velocity near the WWTP (see bottom right three panels in Figure 2). It also has a dramatic jump in SSH at the WWTP and sudden vertical homogeneity of biogeochemistry variables. I shared the issue with the ROMS community online, and they suspected a CFL condition violation. WWTPs in the model discharge solely to the bottom sigma layer. Even though their flowrate is small compared to rivers, discharging to only one vertical layer may be enough to cause a CFL violation. Thus, this past week I tried distributing WWTP discharge across the bottom 1/3 sigma layers (10 layers instead of 1). More details are in the next section.
 
-# Updates from the past week
+## Updates from the past week
 
-## CFL number of prior runs
+### CFL number of prior runs
 
 Per Alex's suggestion, I created depth vs. CFL number plots over time at the location of the Oak Harbor Lagoon WWTP. Figure 3 shows a comparison of CFL number for a run with WWTPs (that blew up), and a run without WWTPs (that ran just fine).
 
@@ -32,7 +32,7 @@ Per Alex's suggestion, I created depth vs. CFL number plots over time at the loc
 
 With the Oak Harbor Lagoon WWTP, the vertical velocity CFL number appears to reach, or exceed, one just before blowup. Based on these results, it appears as though a CFL condition violation is indeed what caused ROMS to crash at Oak Harbor Lagoon WWTP.
 
-## Discharging to bottom 1/3 sigma layers
+### Discharging to bottom 1/3 sigma layers
 
 This week I ran the model starting on 2021.02.18 (one day before Oak Harbor Lagoon WWTP blew up), except with WWTPs discharging to the bottom 1/3 sigma layers. The test ran successfully. Figure 4 shows the surface velocities near Oak Harbor Lagoon WWTP at hour 20 of 2021.02.19 (which is when prior runs had blown up).
 
@@ -50,7 +50,7 @@ Now my question is: why didn't this run blow up? Or perhaps, why did the origina
 
 My other question is: does discharging from the bottom 1/3 sigma layers really improve anything? To answer this, I decided to revisit Birch Bay WWTP.
 
-## Revisiting Birch Bay WWTP
+### Revisiting Birch Bay WWTP
 
 We never truly understood why Birch Bay WWTP was causing ROMS to blowup. I have decided to create a CFL number plot at Birch Bay WWTP to check whether a CFL condition violation may also be a likely culprit (Fig. 6). Unlike Oak Harbor Lagoon WWTP, the CFL numbers don't appear as high near Birch Bay WWTP. This does not mean that a CFL condition violation was not the cause of blowup, but it is also not as clearly the culprit for blowup. Regardless, it will still be valuable to test a new point source distribution at Birch Bay WWTP (especially if I can confirm that Birch Bay still blows up when discharging solely from the bottom sigma layer).
 
@@ -66,7 +66,7 @@ Afterwards, I distributed point source discharge to the bottom 1/3 sigma layers 
 
 At least for Birch Bay WWTP, distributing point source transport to the bottom 1/3 sigma layers does not prevent ROMS from blowing up.
 
-## Re-initializing as a perfect restart
+### Re-initializing as a perfect restart
 
 I spoke with Jilian about how ROMS gave me different results at Oak Harbor Lagoon, even though my test cases used the same forcing. She recommended that I try to run the model again, but to use a *perfect restart* initialization instead of a *continuation* (two different restart options).
 
@@ -78,6 +78,6 @@ At this point, it would be good to repeat the following tests starting on 2021.0
 
 If I can confirm that discharging to the bottom 1/3 sigma layers resolves the Oak Harbor Lagoon WWTP problem, then I'll attempt another one-year run with this solution. I'll also continue to omit Birch Bay WWTP because it is still an unresolved problem.
 
-## Update on placement of LwSrc's on the rho-grid
+### Update on placement of LwSrc's on the rho-grid
 
 After much confusion, I've come to the conclusion that the placement and indexing of point sources on the LiveOcean grid has been correct all along. No changes are necessary.
