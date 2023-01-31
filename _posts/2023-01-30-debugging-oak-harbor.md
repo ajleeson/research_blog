@@ -28,7 +28,7 @@ Then, I repeated the experiment in which all WWTPs discharge to the bottom 1/3 s
 ---
 ## WWTP discharge equally distributed across sigma layers
 
-As a final test, I equally distributed WWTP discharge amongst all sigma layers. Now, the vertical profile of WWTPs matches that of rivers, with the only difference being whether the sources is implemented vertically (LwSrc) or horizontally (LuvSrc).
+As a final test, I equally distributed WWTP discharge amongst all sigma layers. Now, the vertical profile of WWTPs matches that of rivers, with the only difference being whether the source is implemented vertically (LwSrc) or horizontally (LuvSrc).
 
 This run also blew up. In fact, it blew up one hour earlier than the original run. Figure 4 shows surface velocities for this run prior to blow up. Based on these results, I am confident that too much transport is not the issue with WWTPs.
 
