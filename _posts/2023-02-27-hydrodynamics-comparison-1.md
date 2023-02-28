@@ -35,9 +35,9 @@ I'll further note that the largest discharger is already located at a coastal gr
 ---
 ## One Month With and Without Point Sources
 
-As I mentioned aboved, I ran LiveOcean with TRAPS from 2021.02.01 through 2021.03.01. This should roughly gives us data over a full spring neap cycle. I ran two test conditions:
+As I mentioned aboved, I ran LiveOcean with TRAPS from 2021.02.01 through 2021.03.01. This should roughly give us information over a full spring neap cycle. I ran two test conditions:
 1. All TRAPS *except* Birch Bay WWTP and Oak Harbor Lagoon WWTP
-2. No point sources, but still indluced tiny rivers
+2. No point sources, but still included tiny rivers
 
 Again, neither run blew up. Both runs were initialized as a perfect restart using the restart file from my original 2021 attempt to run LiveOcean (which blew up on 2021.02.19 at Oak Harbor Lagoon WWTP).
 
@@ -49,4 +49,4 @@ The model runs only recently finished so I don't have extensive analysis yet. Ho
 **Without Point Sources (markers denote where the "would-be" WWTPs are located)**
 <p style="text-align:center;"><img src="https://user-images.githubusercontent.com/15829099/221714348-306ab9e3-caf2-453f-af3d-24dc2392ceb4.png" width="750"/><br>Fig 4. No point source run: Surface velocities on hour 21 of 2021.02.25 in Main Basin. Note that this run still includes tiny rivers.</p><br>
 
-Even though the "with WWTP" condition did not blow up, I am still seeing some higher surface velocities near the WWTPs in Figure 3. What this suggests to me is that *all* point sources are causing strange behavior, but only Birch Bay WWTP and Oak Harbor Lagoon WWTP have been strange enough to cause a blow up.
+Even though the "with WWTP" condition did not blow up, I am still seeing some higher surface velocities near the WWTPs in Figure 3. Surface velocities just south of Bainbridge Island City WWTP are particularly strange. Higher velocities just south of the WWTP also match what I was observing at Oak Harbor Lagoon WWTP (ROMS was blowing up just south of the WWTP rather than exactly at the WWTP). What this suggests to me is that many, if not all, point sources are causing strange behavior. But so far only Birch Bay WWTP and Oak Harbor Lagoon WWTP have been strange enough to cause a blow up. Either way, there's something strange happening.
