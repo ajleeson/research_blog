@@ -39,17 +39,17 @@ Given our current problems, I revisited these old results and looked explicitly 
 
 Note that the point sources in the idealized estuaries discharge uniformly to all sigma layers. The transport of each source is 1000 m3/s ("wow that's a lot" was my reaction too). Figure 3 shows the surface velocities over the full idealized estuary domain.
 
-<video src="https://user-images.githubusercontent.com/15829099/223492388-6ff6a8b9-e1b6-4beb-829c-b506088a4ad6.mp4" controls="controls" style="max-width: 800px;"></video><br><p style="text-align:center;">Fig. 3 Hourly movie of the surface velocity in the idealized estuary.
-</p><br>
+<video src="https://user-images.githubusercontent.com/15829099/223492388-6ff6a8b9-e1b6-4beb-829c-b506088a4ad6.mp4" controls="controls" style="max-width: 800px;"><br>Fig. 3 Hourly movie of the surface velocity in the idealized estuary.
+</video><br>
 
 Nothing stands out as being too weird in this video. However, when I take a closer look at the WWTPs, I begin to notice that the vertical velocity near the source is large and negative. Figure 4 below shows a cloe-up of WWTP 4.
 
-<video src="https://user-images.githubusercontent.com/15829099/223493917-677f82fc-eb16-4d77-b962-2026032d11d7.mp4" controls="controls" style="max-width: 800px;"></video><br><p style="text-align:center;">Fig. 4 Hourly movie of the surface velocity in the idealized estuary at WWTP 4.</p><br>
+<video src="https://user-images.githubusercontent.com/15829099/223493917-677f82fc-eb16-4d77-b962-2026032d11d7.mp4" controls="controls" style="max-width: 800px;"><br>Fig. 4 Hourly movie of the surface velocity in the idealized estuary at WWTP 4.</video><br>
 
 We see the same negative vertical velocity at WWTP 5 below. As an added bonus, this video includes SSH anomaly, though nothing seems to be anomalous about the anomaly.
 
 <video src="https://user-images.githubusercontent.com/15829099/223493214-cd6aaf00-20d1-4d52-9179-09a8b68ede84.mp4
-" controls="controls" style="max-width: 800px;"></video><br><p style="text-align:center;">Fig. 5 Hourly movie of the surface velocity in the idealized estuary at WWTP 5.</p><br>
+" controls="controls" style="max-width: 800px;"><br>Fig. 5 Hourly movie of the surface velocity in the idealized estuary at WWTP 5.</video><br>
 
 ---
 ## Other Tests
