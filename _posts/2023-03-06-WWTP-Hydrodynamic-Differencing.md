@@ -1,4 +1,4 @@
-## WWTP Hydrodynamic Differencing & More
+## WWTP Hydrodynamic Differencing and More
 
 This week I created some hydrodynamic differencing movies using the "with WWTPs" and "no WWTPs" runs from last week. There appears to be quite a significant difference between these two runs.
 
