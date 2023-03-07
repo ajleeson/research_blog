@@ -25,8 +25,8 @@ Figure 1 shows a screenshot of the type of plot/movie I am now able to generate.
 
 Using this new script, I generated an hourly movie of the hydrodynamic differencing in this Main Basin region (Fig 2). There is very clearly a difference between the "with WWTPs" and "no WWTPs" runs, even in waters several kilometers from a WWTP. Every so often, the velocities and SSH anomaly also appears to become *strikingly* different, suggesting that a WWTP began to have an instability. For instance, take a look at timestamp 1:22 in the video (corresponding to 2021.02.28, 06:00 PST, 0015 hour). Something very strange is happening at West Point WWTP that is highly reminiscent of our problems at Birch Bay WWTP and Oak Harbor Lagoon WWTP.
 
-<video src="https://user-images.githubusercontent.com/15829099/223488900-46fa150b-5062-4a88-90a7-e9e4489c6521.mp4" controls="controls" style="max-width: 800px;"></video><br><p style="text-align:center;">Fig. 2 Hourly movie of the hydrodynamic difference between the "with WWTP" and "no WWTP" run in Main Basin over the month of February.
-</p><br>
+<video src="https://user-images.githubusercontent.com/15829099/223488900-46fa150b-5062-4a88-90a7-e9e4489c6521.mp4" controls="controls" style="max-width: 800px;"></video><br>Fig. 2 Hourly movie of the hydrodynamic difference between the "with WWTP" and "no WWTP" run in Main Basin over the month of February.
+<br>
 
 Creating a video with hourly resolution took *a long long time*. But it did give us some good resolution, and helped point out some weird behavior that I may not have otherwise observed. I'm planning to make more movies of other regions in the coming week.
 
@@ -39,17 +39,17 @@ Given our current problems, I revisited these old results and looked explicitly 
 
 Note that the point sources in the idealized estuaries discharge uniformly to all sigma layers. The transport of each source is 1000 m3/s ("wow that's a lot" was my reaction too). Figure 3 shows the surface velocities over the full idealized estuary domain.
 
-<video src="https://user-images.githubusercontent.com/15829099/223492388-6ff6a8b9-e1b6-4beb-829c-b506088a4ad6.mp4" controls="controls" style="max-width: 800px;"><br>Fig. 3 Hourly movie of the surface velocity in the idealized estuary.
-</video><br>
+<video src="https://user-images.githubusercontent.com/15829099/223492388-6ff6a8b9-e1b6-4beb-829c-b506088a4ad6.mp4" controls="controls" style="max-width: 800px;"></video><br>Fig. 3 Hourly movie of the surface velocity in the idealized estuary.
+<br>
 
 Nothing stands out as being too weird in this video. However, when I take a closer look at the WWTPs, I begin to notice that the vertical velocity near the source is large and negative. Figure 4 below shows a cloe-up of WWTP 4.
 
-<video src="https://user-images.githubusercontent.com/15829099/223493917-677f82fc-eb16-4d77-b962-2026032d11d7.mp4" controls="controls" style="max-width: 800px;"><br>Fig. 4 Hourly movie of the surface velocity in the idealized estuary at WWTP 4.</video><br>
+<video src="https://user-images.githubusercontent.com/15829099/223493917-677f82fc-eb16-4d77-b962-2026032d11d7.mp4" controls="controls" style="max-width: 800px;"></video><br>Fig. 4 Hourly movie of the surface velocity in the idealized estuary at WWTP 4.<br>
 
 We see the same negative vertical velocity at WWTP 5 below. As an added bonus, this video includes SSH anomaly, though nothing seems to be anomalous about the anomaly.
 
 <video src="https://user-images.githubusercontent.com/15829099/223493214-cd6aaf00-20d1-4d52-9179-09a8b68ede84.mp4
-" controls="controls" style="max-width: 800px;"><br>Fig. 5 Hourly movie of the surface velocity in the idealized estuary at WWTP 5.</video><br>
+" controls="controls" style="max-width: 800px;"></video><br>Fig. 5 Hourly movie of the surface velocity in the idealized estuary at WWTP 5.<br>
 
 ---
 ## Other Tests
