@@ -36,8 +36,7 @@ The video in Figure 3 shows the surface velocity, surface temperature, and sea s
 
 <p style="text-align:center;"><video src="https://user-images.githubusercontent.com/15829099/230694128-9068311a-7c64-477f-b221-94e7f9c82856.mp4" controls="controls" style="max-width: 800px;"></video><br>Fig. 3 Surface velocity, temperature, and SSH in baseline run.</p><br>
 
-<video src="https://user-images.githubusercontent.com/15829099/230694106-ed965d27-a40e-4636-90fb-d65545a1c73c.mp4" controls="controls" style="max-width: 800px;"></video><br>Fig. 4 Section temperature in the baseline run.
-<br>
+<p style="text-align:center;"><video src="https://user-images.githubusercontent.com/15829099/230694106-ed965d27-a40e-4636-90fb-d65545a1c73c.mp4" controls="controls" style="max-width: 800px;"></video><br>Fig. 4 Section temperature in the baseline run.</p><br>
 
 From this point onwards, all other test runs are compared to this new baseline in which there is no surface stress and the sigma layers are evenly spaced.
 
@@ -48,22 +47,17 @@ After establishing a baseline, I created a model run which added a single WWTP t
 
 Figure 5 shows differences in surface parameters between this botwwtp10 scenario and the baseline scenario. Note that for SSH (zeta), the deviation from the average difference (per timestep) in SSH is plotted rather than the difference in SSH. This extra calculation is necessary because SSH constantly increases with time as the WWTP discharges, and the magnitude of the SSH increase is greater than the SSH variation over the domain. Subtacting the average over the domain thus allows us to visualize which regions are higher or lower than other regions.
 
-<video src="https://user-images.githubusercontent.com/15829099/230693675-3f892f67-c498-46b6-b819-07090714c045.mp4" controls="controls" style="max-width: 800px;"></video><br>Fig. 5 Surface plot of the difference between the botwwtp10 scenario and the baseline scenario. Parameters include u, v, w, temperature, and SSH
-<br>
+<p style="text-align:center;"><video src="https://user-images.githubusercontent.com/15829099/230693675-3f892f67-c498-46b6-b819-07090714c045.mp4" controls="controls" style="max-width: 800px;"></video><br>Fig. 5 Surface plot of the difference between the botwwtp10 scenario and the baseline scenario. Parameters include u, v, w, temperature, and SSH</p><br>
 
 The next series of videos shows differencing plots over a section. Note that a single video was created for each of temperature, u, v, and w.
 
-<video src="https://user-images.githubusercontent.com/15829099/230693668-bacc33d8-6996-485c-9d56-a5d30c86fa64.mp4" controls="controls" style="max-width: 800px;"></video><br>Fig. 6 Section plot of the difference in temperature between the botwwtp10 scenario and the baseline scenario.
-<br>
+<p style="text-align:center;"><video src="https://user-images.githubusercontent.com/15829099/230693668-bacc33d8-6996-485c-9d56-a5d30c86fa64.mp4" controls="controls" style="max-width: 800px;"></video><br>Fig. 6 Section plot of the difference in temperature between the botwwtp10 scenario and the baseline scenario.</p><br>
 
-<video src="https://user-images.githubusercontent.com/15829099/230693669-b360e4dc-3158-4560-bf5b-d3f468b98f06.mp4" controls="controls" style="max-width: 800px;"></video><br>Fig. 7 Section plot of the difference in u between the botwwtp10 scenario and the baseline scenario.
-<br>
+<p style="text-align:center;"><video src="https://user-images.githubusercontent.com/15829099/230693669-b360e4dc-3158-4560-bf5b-d3f468b98f06.mp4" controls="controls" style="max-width: 800px;"></video><br>Fig. 7 Section plot of the difference in u between the botwwtp10 scenario and the baseline scenario.</p><br>
 
-<video src="https://user-images.githubusercontent.com/15829099/230693671-612e140c-9132-4110-9f65-c7721a0f3ed5.mp4" controls="controls" style="max-width: 800px;"></video><br>Fig. 8 Section plot of the difference in v between the botwwtp10 scenario and the baseline scenario.
-<br>
+<p style="text-align:center;"><video src="https://user-images.githubusercontent.com/15829099/230693671-612e140c-9132-4110-9f65-c7721a0f3ed5.mp4" controls="controls" style="max-width: 800px;"></video><br>Fig. 8 Section plot of the difference in v between the botwwtp10 scenario and the baseline scenario.</p><br>
 
-<video src="https://user-images.githubusercontent.com/15829099/230693673-9abc61b2-93fc-41ec-af9e-d8f906a6d617.mp4" controls="controls" style="max-width: 800px;"></video><br>Fig. 9 Section plot of the difference in w between the botwwtp10 scenario and the baseline scenario.
-<br>
+<p style="text-align:center;"><video src="https://user-images.githubusercontent.com/15829099/230693673-9abc61b2-93fc-41ec-af9e-d8f906a6d617.mp4" controls="controls" style="max-width: 800px;"></video><br>Fig. 9 Section plot of the difference in w between the botwwtp10 scenario and the baseline scenario.</p><br>
 
 The vertical results make no sense to me. It is strange that the largest magnitude velocity is at the surface and is negative, even though the WWTP is a source at the bottom. What is even stranger is that u and v seem to correctly emanate from the bottom sigma layer for the entire duration of the run. What could possibly be happening to w?
 
