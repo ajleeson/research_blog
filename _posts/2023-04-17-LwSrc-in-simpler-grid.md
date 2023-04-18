@@ -2,6 +2,8 @@
 
 This week I have been running LwSrc tests in an even simpler grid, courtesy of John Wilkin. I am able to reproduce strange w values in my runs. However, I am unable to reproduce John's w results even when I run his model without any modification. Maybe something is uniquely problematic with the way I am running ROMS. More details below.
 
+**Note on all videos:** The N-S and E-W axis are all labeled "km." Unfortunately, after I had already created and processed the videos, I realized that the axis are actually in units of "grid cells." The domain is 5 x 5 km large, or 41 x 41 grid cells.
+
 ## Note on Volume Conservation
 
 Before we dive into the details of the new grid, I'd like to bring closure to the issue of volume conservation in the upwelling test case. (Spoiler: volume is conserved! Whew!)
