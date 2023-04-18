@@ -7,7 +7,7 @@ This week I have been running LwSrc tests in an even simpler grid, courtesy of J
 Before we dive into the details of the new grid, I'd like to bring closure to the issue of volume conservation in the upwelling test case. (Spoiler: volume is conserved! Whew!)
 
 Last week I shared preliminary results in which I compared the point source discharge rate to the surface integrated rate of sea level rise:
-$\int_A \frac{\partial\zeta}{\partial t} dA$
+$$\int_A \frac{\partial\zeta}{\partial t} dA$$
 
 As you may recall, volume was not conserved between the 10 m3/s point source and the 10.75 m3/s sea level rise.
 
