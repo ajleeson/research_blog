@@ -34,9 +34,9 @@ As of Monday, the nutrient-less WWTP run has made it to March. Per Parker's advi
 
 The next couple of figures show some preliminary results on March 07, 2017. Figure 5 shows a comparison of surface phytoplankton at Whidbey Basin. Figure 6 shows a comparison of bottom DO at Whidbey Basin. In March, DO appears to be fully saturated in both case. In the nutrient-less WWTP run, Oak Harbor appears to have more phytoplankton with a corresponding higher DO concentration. I'm looking forward to watching DO evolve as the model run moves into summer.
 
-<p style="text-align:center;"><img src="https://github.com/ajleeson/LO_user/assets/15829099/0cdeaf63-92d9-4f87-8f78-c229d499b6b7" width="500"/><br>Fig 5. Whidbey Basin surface phytoplankton on March 07,2017.</p><br>
+<p style="text-align:center;"><img src="https://github.com/ajleeson/LO_user/assets/15829099/4e9a78b2-113e-4348-bf11-26f342b593b5" width="500"/><br>Fig 5. Whidbey Basin surface phytoplankton on March 07,2017.</p><br>
 
-<p style="text-align:center;"><img src="https://github.com/ajleeson/LO_user/assets/15829099/4f07b679-8c74-424e-9c87-a5b76cabf079" width="500"/><br>Fig 6. Whidbey Basin bottom DO on March 07,2017.</p><br>
+<p style="text-align:center;"><img src="https://github.com/ajleeson/LO_user/assets/15829099/47829f41-a089-4e05-b7a3-189915e167c9" width="500"/><br>Fig 6. Whidbey Basin bottom DO on March 07,2017.</p><br>
 
 Currently, my plotting infrastructure is set up to easily make similar plots for any variable. The coding infrastructure also makes it easy to switch between different regions. In the coming week, I'd like to make additional improvements to the code. Some items include:
 
