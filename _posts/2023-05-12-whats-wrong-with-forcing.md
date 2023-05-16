@@ -1,4 +1,4 @@
-## Forcing Debugging & Initial Model Results
+## Forcing Debugging and Initial Model Results
 
 This week I attempted to debug the incorrect forcing in the idealized domain. Switching from an analytically-added source to a netCDF-added source does not fix the problem. Thus, forcing continues to be an open issue.
 
