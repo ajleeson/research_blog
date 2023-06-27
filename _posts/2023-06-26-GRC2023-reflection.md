@@ -1,4 +1,4 @@
-## GRS/GRC 2023 Reflection & Summer Planning
+## GRS/GRC 2023 Reflection and Summer Planning
 
 The GRS/GRC were really great experiences. My brain was turning into jelly by the end of the week, but I think that's a symptom of a lot of learning and a lot of networking.
 
