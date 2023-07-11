@@ -1,4 +1,4 @@
-## Summer Planning & Continued Debugging
+## Summer Planning and Continued Debugging
 
 The following couple of weeks I've been swimming in a growing sea of thoughts and ideas inspired by the GRS/GRC. Per Alex's recommendation, I have put together a tentative action plan for the summer based on some of these thoughts. I have also tried to summarize my new knowledge and ideas pertaining to WWTP implementaton. A lot of these ideas are still in their infancy, so I welcome any suggestions and feedback. Lastly, I took a look at the change in depth of WWTPs implemented as tiny rivers.
 
