@@ -54,7 +54,9 @@ My next major goal is to run another experiment with and without WWTP DIN. This 
 
 - Upgrade to Ecology's latest dataset
 - Deal with WWTPs that opened or closed on a certain year
-- more items...
+- Make sure river mouths located on a narrow strip of land get placed on the correct side of the land (the algorithm is blindly placing rivers on the nearest coastal grid cell without awareness of real geography)
+- Double check ambiguous duplicate rivers (SSM rivers that may or may not overlap with pre-existing LO rivers)
+- Remove 2013/2014 data from climatology for rivers based on Big Beef Creek
 
 There are also a few model configurations I'd like to discuss/plan:
 
@@ -70,16 +72,16 @@ We have one month before the next KC meeting. I have found that setting goals fo
 
 The very first time I ran LiveOcean with TRAPS, the model blew up on day 1. The following timeline lists key moments in the ensuing debugging process.
 
-<details><summary><strong>Identifying that blowups were linked to a WWTP</strong></summary>
+### Identifying that blowups were linked to a WWTP
 
 Using the pan_plot debug plot to look at max/min surface velocities helped pinpoint the problem to Birch Bay WWTP. Identifying that the issue was related to WWTPs helped narrow the scope of the problem.
 
 <p style="text-align:center;"><img src="https://user-images.githubusercontent.com/15829099/200236146-994ce50a-7407-47e3-a883-407d762eb8b7.png" width="600"/><br>Fig 3. Min/max surface velocities of LiveOcean with-TRAPS on hour 20 of 2020.01.01. These velocities come from one of my first model runs with TRAPS.</p><br>
 
 I later discovered that LiveOcean does not blow up on day 1 if I remove Birch Bay WTTP.
-</details>
 
-<details><summary><strong>Resolving issues with the Birch Bay WWTP inputs</strong></summary>
+
+### Resolving issues with the Birch Bay WWTP inputs
 
 We then checked all of our inputs to Birch Bay WWTP. As it turns out, my forcing file actually had several bugs that I needed to fix, including:
 
@@ -88,18 +90,18 @@ We then checked all of our inputs to Birch Bay WWTP. As it turns out, my forcing
 - Using the same name for Birch Bay WWTP and Birch Bay River
 
 However, even after fixing these forcing file problems, Birch Bay WWTP still continued to blow up.
-</details>
 
-<details><summary><strong>Discovering that other WWTPs blow up too</strong></summary>
+
+### Discovering that other WWTPs blow up too
 
 We decided to remove Birch Bay WWTP and let the model run. After two months, we saw a blow up at Oak Harbor Lagoon WWTP in Whidbey Basin (Fig 4). This finding indicated that Birch Bay WWTP was not the sole problem.
 
 <p style="text-align:center;"><img src="https://user-images.githubusercontent.com/15829099/212557264-68abb019-947a-4294-a586-ab7b2f810313.png" width="600"/><br>Fig 4. Comparison of surface velocity profiles near Oak Harbor Lagoon WWTP just before the "with point sources" run blew up.</p><br>
 
 At this point, we brought our issue to the ROMS forum.
-</details>
 
-<details><summary><strong>Hypothesis elimination</strong></summary>
+
+### Hypothesis elimination
 
 We received many good suggestions from the ROMS forum. I then ran test after test to check whether any suggestions could resolve our issue. Some hypotheses that we disproved and some potential solutions that still failed include:
 
@@ -119,27 +121,27 @@ We received many good suggestions from the ROMS forum. I then ran test after tes
 We also verified that Birch Bay WWTP and Oak Harbor Lagoon WWTP are not especially large dischargers, nor are they located in the shallowest area (Fig. 5)
 
 <p style="text-align:center;"><img src="https://user-images.githubusercontent.com/15829099/221698619-f13916d8-4760-4e83-8810-faa1d00b5238.png" width="400"/><br>Fig 5. WWTP Depth vs. Discharge Rate.</p><br>
-</details>
 
-<details><summary><strong>Discovering that <i>all</i> WWTPs look funny</strong></summary>
+
+### Discovering that <i>all</i> WWTPs look funny
 
 We removed both Birch Bay WWTP and Oak Harbor Lagoon WWTP, then ran the model for a month with and without the other WWTPs. Figure 6 shows the resulting hydrodynamic difference between the two model runs.
 
 We discovered that even though the other WWTPs are not blowing up, they do not behave in a physically realistic way.
 
 <p style="text-align:center;"><video src="https://user-images.githubusercontent.com/15829099/223488900-46fa150b-5062-4a88-90a7-e9e4489c6521.mp4" controls="controls" style="max-width: 800px;"></video><br>Fig. 6 Hourly movie of the hydrodynamic difference between the "with WWTP" and "no WWTP" run in Main Basin over the month of February.</p><br>
-</details>
 
-<details><summary><strong>Demonstrating strange velocities in idealized domain</strong></summary>
+
+### Demonstrating strange velocities in idealized domain
 
 After recognizing that all WWTPs behave strangely, we tried to isolate the issue to a single vertical source in a simple domain. John Wilkin kindly shared a flat-shelf, double-periodic domain which became the basis for idealized experiments.
 
 After a series of tests, we found that the vertical sources indirectly induced barotropic velocities by increasing SSH. The associated vertical velocity, omega, also looked somewhat puzzling.
 
 Parker then developed modifications to the ROMS source code which turned off volume associated with vertical sources. The goal of this modification is to turn off the puzzling hydrodynamics that we observed in the idealized domain. It is worth noting that the vertical source never blew up in the idealized domain.
-</details>
 
-<details><summary><strong>Testing volume-less sources in idealized domain</strong></summary>
+
+### Testing volume-less sources in idealized domain
 
 It was important to test the volume-less sources in the idealized domain to ensure that they worked as expected. We identified and corrected issues with forcing inputs because of these idealized tests.
 
@@ -149,9 +151,9 @@ Finally, we demonstrated that volume-less, neutrally-buoyant vertical sources in
 
 <p style="text-align:center;"><video src="https://github.com/ajleeson/LO_user/assets/15829099/95a903a4-1a2d-49bb-b3fd-863b7c257dc4" controls="controls" style="max-width: 800px;"></video><br>Fig. 8 Section u with volume-less, neutrally-buoyant, freshwater source.</p><br>
 
-</details>
 
-<details><summary><strong>Testing volume-less, neutrally-buoyant sources in LiveOcean</strong></summary>
+
+### Testing volume-less, neutrally-buoyant sources in LiveOcean
 
 After success in the idealized domain, I tested the volume-less, neutrally-buoyant WWTPs in LiveOcean.
 
@@ -159,7 +161,7 @@ The result of this test produced a key finding: Even when we seemingly turn off 
 
 The following day, we found the IF-ELSE conundrum in the LuvSrc module.
 
-</details>
+
 
 ---
 ## What have I been reading
