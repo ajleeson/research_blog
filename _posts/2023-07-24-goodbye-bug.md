@@ -72,7 +72,7 @@ We have one month before the next KC meeting. I have found that setting goals fo
 
 The very first time I ran LiveOcean with TRAPS, the model blew up on day 1. The following timeline lists key moments in the ensuing debugging process.
 
-### Identifying that blowups were linked to a WWTP
+### Nov 2022: Identifying that blowups were linked to a WWTP
 
 Using the pan_plot debug plot to look at max/min surface velocities helped pinpoint the problem to Birch Bay WWTP. Identifying that the issue was related to WWTPs helped narrow the scope of the problem.
 
@@ -81,7 +81,7 @@ Using the pan_plot debug plot to look at max/min surface velocities helped pinpo
 I later discovered that LiveOcean does not blow up on day 1 if I remove Birch Bay WTTP.
 
 
-### Resolving issues with the Birch Bay WWTP inputs
+### Nov 2022: Resolving issues with the Birch Bay WWTP inputs
 
 We then checked all of our inputs to Birch Bay WWTP. As it turns out, my forcing file actually had several bugs that I needed to fix, including:
 
@@ -92,7 +92,7 @@ We then checked all of our inputs to Birch Bay WWTP. As it turns out, my forcing
 However, even after fixing these forcing file problems, Birch Bay WWTP still continued to blow up.
 
 
-### Discovering that other WWTPs blow up too
+### Jan 2023: Discovering that other WWTPs blow up too
 
 We decided to remove Birch Bay WWTP and let the model run. After two months, we saw a blow up at Oak Harbor Lagoon WWTP in Whidbey Basin (Fig 4). This finding indicated that Birch Bay WWTP was not the sole problem.
 
@@ -101,7 +101,7 @@ We decided to remove Birch Bay WWTP and let the model run. After two months, we 
 At this point, we brought our issue to the ROMS forum.
 
 
-### Hypothesis elimination
+### Feb 2023: Hypothesis elimination
 
 We received many good suggestions from the ROMS forum. I then ran test after test to check whether any suggestions could resolve our issue. Some hypotheses that we disproved and some potential solutions that still failed include:
 
@@ -123,7 +123,7 @@ We also verified that Birch Bay WWTP and Oak Harbor Lagoon WWTP are not especial
 <p style="text-align:center;"><img src="https://user-images.githubusercontent.com/15829099/221698619-f13916d8-4760-4e83-8810-faa1d00b5238.png" width="400"/><br>Fig 5. WWTP Depth vs. Discharge Rate.</p><br>
 
 
-### Discovering that <i>all</i> WWTPs look funny
+### Mar 2023: Discovering that <i>all</i> WWTPs look funny
 
 We removed both Birch Bay WWTP and Oak Harbor Lagoon WWTP, then ran the model for a month with and without the other WWTPs. Figure 6 shows the resulting hydrodynamic difference between the two model runs.
 
@@ -132,7 +132,7 @@ We discovered that even though the other WWTPs are not blowing up, they do not b
 <p style="text-align:center;"><video src="https://user-images.githubusercontent.com/15829099/223488900-46fa150b-5062-4a88-90a7-e9e4489c6521.mp4" controls="controls" style="max-width: 800px;"></video><br>Fig. 6 Hourly movie of the hydrodynamic difference between the "with WWTP" and "no WWTP" run in Main Basin over the month of February.</p><br>
 
 
-### Demonstrating strange velocities in idealized domain
+### Apr 2023: Demonstrating strange velocities in idealized domain
 
 After recognizing that all WWTPs behave strangely, we tried to isolate the issue to a single vertical source in a simple domain. John Wilkin kindly shared a flat-shelf, double-periodic domain which became the basis for idealized experiments.
 
@@ -141,7 +141,7 @@ After a series of tests, we found that the vertical sources indirectly induced b
 Parker then developed modifications to the ROMS source code which turned off volume associated with vertical sources. The goal of this modification is to turn off the puzzling hydrodynamics that we observed in the idealized domain. It is worth noting that the vertical source never blew up in the idealized domain.
 
 
-### Testing volume-less sources in idealized domain
+### May-Jul 2023: Testing volume-less sources in idealized domain
 
 It was important to test the volume-less sources in the idealized domain to ensure that they worked as expected. We identified and corrected issues with forcing inputs because of these idealized tests.
 
@@ -153,7 +153,7 @@ Finally, we demonstrated that volume-less, neutrally-buoyant vertical sources in
 
 
 
-### Testing volume-less, neutrally-buoyant sources in LiveOcean
+### Jul 2023: Testing volume-less, neutrally-buoyant sources in LiveOcean
 
 After success in the idealized domain, I tested the volume-less, neutrally-buoyant WWTPs in LiveOcean.
 
