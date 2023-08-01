@@ -106,4 +106,4 @@ On the theme of improved biological rate parameters, I have been reading more li
 
 Sutton, J. N., Johannessen, S. C., &#38; Macdonald, R. W. (2013). A nitrogen budget for the strait of Georgia, British Columbia, with emphasis on particulate nitrogen and dissolved inorganic nitrogen. <i>Biogeosciences</i>, <i>10</i>(11), 7179–7194. https://doi.org/10.5194/bg-10-7179-2013
 
-and a report from Jude Apple on "Spatial and seasonal variability in Salish Sea bottom-water microbial respiration"
+Apple, J. and S. Bjornson. 2019. Spatial and seasonal variability in Salish Sea bottom-water microbial respiration. https://apps.ecology.wa.gov/eim/search/Detail/Detail.aspx?DetailType=Study&SystemProjectId=99971985.
