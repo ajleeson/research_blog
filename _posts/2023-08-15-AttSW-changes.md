@@ -4,7 +4,7 @@ This post describes the changes I made to increase AttSW in the Salish Sea. Note
 
 Figure 1 shows a mp of the intended changes. Outside of the Salish Sea region, AttSW = 0.05 m-1. Inside of the Salish Sea (ish) region, AttSW = 0.15 m-1.
 
-<p style="text-align:center;"><img src="https://github.com/ajleeson/LO_user/assets/15829099/de1d5031-c8ec-4ee8-9bde-8b28ae03e041" width="300"/><br>Fig 1. Map of AttSW values.</p><br>
+<p style="text-align:center;"><img src="https://github.com/ajleeson/LO_user/assets/15829099/aab9ecd4-ddd9-4e89-b338-dee8c52af843" width="300"/><br>Fig 1. Map of AttSW values.</p><br>
 
 The following section enumerates all of the changes I made to fennel.h.
 
@@ -24,7 +24,7 @@ The following section enumerates all of the changes I made to fennel.h.
 <p style="text-align:center;"><img src="https://github.com/ajleeson/LO_user/assets/15829099/368b7273-d974-4658-811e-6bb3123ae9e0" width="500"/></p><br>
    
 **(5.)** If lonr and latr are within the Salish Sea, AttSW_region = AttSW * 3. Otherwise, AttSW_region = AttSW. I also added some print statements for testing, but have since commented them out. Note that AttSW is still defined by the user in bio_Fennel_BLANK.in. The initial value is still 0.05 m-1, and simply gets multiplied by a factor of 3 inside of the Salish Sea.
-<p style="text-align:center;"><img src="https://github.com/ajleeson/LO_user/assets/15829099/82d50f29-6306-4089-9f3f-1dba0328a841" width="800"/></p><br>
+<p style="text-align:center;"><img src="https://github.com/ajleeson/LO_user/assets/15829099/f528bed8-213b-4cbb-baf7-7dc297761f47" width="1000"/></p><br>
    
 **(6.)** Update calculations of light attenuation to use the new regional AttSW_region rather than AttSW
 <p style="text-align:center;"><img src="https://github.com/ajleeson/LO_user/assets/15829099/257584fa-1a71-45c2-8502-72a4600dfbf6" width="600"/></p><br>
@@ -33,7 +33,7 @@ The following section enumerates all of the changes I made to fennel.h.
 ### Results
 
 The resulting print statement in the log file demonstrated success:
-<p style="text-align:center;"><img src="https://github.com/ajleeson/LO_user/assets/15829099/c336c624-c1d4-4d92-9d98-6c26b64ecf7e" width="300"/><br>Fig 2. Print statement output in the log file listing the different AttSW_region values.</p><br>
+<p style="text-align:center;"><img src="https://github.com/ajleeson/LO_user/assets/15829099/2d57a278-02c8-469c-8ed7-786054d7dc93" width="300"/><br>Fig 2. Print statement output in the log file listing the different AttSW_region values.</p><br>
 
 Figure 3 shows the corresponding location of these test points on a map.
-<p style="text-align:center;"><img src="https://github.com/ajleeson/LO_user/assets/15829099/b4054ffd-8a6c-4772-ba17-b6a0a0b4b027" width="300"/><br>Fig 3. Location of AttSW test points.</p><br>
+<p style="text-align:center;"><img src="https://github.com/ajleeson/LO_user/assets/15829099/4d48b45a-e087-4f1a-a8f3-c11c85d3d384" width="300"/><br>Fig 3. Location of AttSW test points.</p><br>
