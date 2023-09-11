@@ -21,7 +21,7 @@ Now that we have new results with fully functional TRAPS and improved biogeochem
 
 Note that the depths of comparison are not the same. ORCA buoy bottom DO data refers to the deepest DO measurement available. Model bottom DO is taken from the bottom sigma layer, and the average depth of the bottom sigma layer is the "model depth."
 
-<p style="text-align:center;"><img src="https://github.com/ajleeson/LO_user/assets/15829099/29d64977-77d5-406c-a612-a84c9673bc48" width="800"/><br>Fig ????. Model-model-ORCA buoy comparison of bottom DO.</p><br>
+<p style="text-align:center;"><img src="https://github.com/ajleeson/LO_user/assets/15829099/29d64977-77d5-406c-a612-a84c9673bc48" width="800"/><br>Fig 1. Model-model-ORCA buoy comparison of bottom DO.</p><br>
 
 In general, the new results have a higher initial bottom DO compared to prior observations and the ORCA measurements. At Twanoh, Dabob Bay, and Hoodsport, the bottom DO in the new model run remains higher than observations and the GRC run. However, bottom DO at Point Wells, North Buoy, and Carr Inlet decreases more significantly in the new model run compared to the GRC run. At Point Wells and Carr Inlet, specifically, the new model run appears to do a better job capturing the obersved summer DO depletion than the GRC run.
 
@@ -70,6 +70,12 @@ The figures below show model-model-data comparison plots. Every plot compares th
 The table below provides a summary of whether the new model run has improved or worsened bias/RMSE compared to the GRC run.
 "Improved" implies that the new run has lower bias and RMSE compared to the GRC run.
 "Worsened" implies that the new run has higher bias and RMSE compared to the GRC run.
+
+<style scoped>
+table {
+  font-size: 11px;
+}
+</style>
 
 | Variable              |Salinity| Temp   | DO     | NO3    | NH4    | DIN    | DIC    | TA     | Chl    |
 | :------------         |:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
