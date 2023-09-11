@@ -33,9 +33,9 @@ We can also conclude that the new results are influenced by a combination of bot
 
 This week I also began exploring some of Parker's model skill assessment scripts in his obsmod folder. In addition to creating modeled-observed plots, the script also calculates the following statistics:
 
-$\mathrm{Bias} = \mathrm{mean}\big( \mathrm{modeled} - \mathrm{observed}\big)$
+$$\mathrm{Bias} = \mathrm{mean}\big( \mathrm{modeled} - \mathrm{observed}\big)$$
 
-$\mathrm{RMSE} = \sqrt{\mathrm{mean}\big[ (\mathrm{modeled} - \mathrm{observed})^2\big]}$
+$$\mathrm{RMSE} = \sqrt{\mathrm{mean}\big[ (\mathrm{modeled} - \mathrm{observed})^2\big]}$$
 
 The figures below show model-model-data comparison plots. Every plot compares the new model run and the GRC run to one of the following set of observations:
 - NCEI Salish
