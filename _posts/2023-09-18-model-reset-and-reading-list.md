@@ -1,11 +1,11 @@
-## Model reset and new reading list
+## Model re-set and new reading list
 
 This week I restarted the model evaluation run with the old initial conditions. At the time of writing, the run has made it to mid-March without issue.
 
 I have also started thinking about literature for this upcoming quarter and my upcoming presentations. Some proposed reading lists are provided below.
 
 ---
-## Model rest
+## Model re-set
 
 Last week we realized that we tried to change too many things at once for the model evaluation run. We agreed to take a step back and use the old initial conditions for now, but keep the biogeochemistry changes. However, between the old run and the new run, the model grid was updated from cas6 to cas7 to include Agate Pass and Swinomish Channel (Fig 1).
 
