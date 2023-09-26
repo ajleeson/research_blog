@@ -36,17 +36,39 @@ Overall, it seems that Hood Canal is still being tricky.
 
 Next, I compared the three model runs to all available bottle data in the region. These comparisons were made using scripts in Parker's obsmod repo, which I have updated to use the self-imposed <span style="color:#399299">**blue**</span>-<span style="color:#A2D426">**green**</span>-<span style="color:#9778CE">**purple**</span> color theme of my PhD.
 
+**Full Grid**
+
 Figures 2 and 3 show the property-property plots of the full grid for both shallow and deep depths, respectively.
 
 <p style="text-align:center;"><img src="https://github.com/ajleeson/LO_user/assets/15829099/8fe840c7-61e6-4a09-a4b0-e5de15a16d59" width="800"/><br>Fig 2. Model-model-data comparison over full grid (shallow). New run (TRAPS+old ICs) compared to prior run (TRAPS+new ICs) compared to GRC run compared to shallow bottle data.</p><br>
 
 <p style="text-align:center;"><img src="https://github.com/ajleeson/LO_user/assets/15829099/f6fc1e5b-7b33-4ee7-aa90-ed6c095033d1" width="800"/><br>Fig 3. Model-model-data comparison over full grid (deep). New run (TRAPS+old ICs) compared to prior run (TRAPS+new ICs) compared to GRC run compared to deep bottle data.</p><br>
 
+**Puget Sound**
+
 Figures 4 and 5 show the property-property plots of Puget Sound for both shallow and deep depths, respectively.
 
 <p style="text-align:center;"><img src="https://github.com/ajleeson/LO_user/assets/15829099/8ac44d1c-6ea2-432c-9396-86ef77f30de5" width="800"/><br>Fig 4. Model-model-data comparison over Puget Sound (shallow). New run (TRAPS+old ICs) compared to prior run (TRAPS+new ICs) compared to GRC run compared to shallow bottle data.</p><br>
 
 <p style="text-align:center;"><img src="https://github.com/ajleeson/LO_user/assets/15829099/78a2b236-1f79-4d85-8c38-7fef8198d5b9" width="800"/><br>Fig 5. Model-model-data comparison over Puget Sound (deep). New run (TRAPS+old ICs) compared to prior run (TRAPS+new ICs) compared to GRC run compared to deep bottle data.</p><br>
+
+**Hood Canal**
+
+Figures 6 and 7 show the property-property plots of Hood Canal for both shallow and deep depths, respectively.
+
+<p style="text-align:center;"><img src="https://github.com/ajleeson/LO_user/assets/15829099/3c367d45-1a54-4990-abd2-a2324b8c24cf" width="800"/><br>Fig 6. Model-model-data comparison over Hood Canal (shallow). New run (TRAPS+old ICs) compared to prior run (TRAPS+new ICs) compared to GRC run compared to shallow bottle data.</p><br>
+
+<p style="text-align:center;"><img src="https://github.com/ajleeson/LO_user/assets/15829099/1ed0bafc-fe97-49eb-8b6e-d32978ffaade" width="800"/><br>Fig 7. Model-model-data comparison over Hood Canal (deep). New run (TRAPS+old ICs) compared to prior run (TRAPS+new ICs) compared to GRC run compared to deep bottle data.</p><br>
+
+**Strait of Georgia**
+
+Figures 8 and 9 show the property-property plots of Hood Canal for both shallow and deep depths, respectively.
+
+<p style="text-align:center;"><img src="https://github.com/ajleeson/LO_user/assets/15829099/040db1ee-4145-4a2b-8e6d-10b1b9b99849" width="800"/><br>Fig 8. Model-model-data comparison over Strait of Georgia (shallow). New run (TRAPS+old ICs) compared to prior run (TRAPS+new ICs) compared to GRC run compared to shallow bottle data.</p><br>
+
+<p style="text-align:center;"><img src="https://github.com/ajleeson/LO_user/assets/15829099/9caae746-42b8-4f2a-a2a6-653358a89650" width="800"/><br>Fig 9. Model-model-data comparison over Strait of Georgia (deep). New run (TRAPS+old ICs) compared to prior run (TRAPS+new ICs) compared to GRC run compared to deep bottle data.</p><br>
+
+**Comments**
 
 In general, the new run and the GRC run have mostly similar performance with the new run have slightly better or slightly worse skill for different state variables. The exceptions are **DO** and **total alkalinity**, which appear to be significantly improved in the new model run.
 
