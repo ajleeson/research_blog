@@ -68,9 +68,11 @@ Another proposed method of investigation was to overlay several years of bottom 
 
 <p style="text-align:center;"><img src="https://github.com/ajleeson/LO_user/assets/15829099/5298df60-62e3-451b-b5bc-ab0245e42c52" width="650"/><br>Fig 4. Bottom DO timeseries comparison at 4 different ORCA buoy stations. The year 2017 is highlighted in pink because 2017 is the year we are using for model evaluation.</p><br>
 
-Mike recently sent me some of the ORCA data that he downloaded, and I am struck by how different those DO timeseries look compared to mine [insert a figure 5 with the figure Mike sent].
+Mike recently sent me some of the ORCA data that he downloaded, and I am struck by how different those DO timeseries look compared to mine. Figure 5 shows an 18 year DO climatology at the Hoodsport station.
 
-Figure 5 suggests that Hoodsport DO is generally much higher in concentration than the values seen in my figures. I did notice that Mike's downloaded data report DO concentrations at a depth of 80 m, rather than a depth of 120 m (which is what I had been plotting). Thus, I took a look at Hoodsport bottom DO at a depth of ~80 m (Fig 6).
+<p style="text-align:center;"><img src="https://github.com/ajleeson/LO_user/assets/15829099/291debef-5530-40bb-8088-bc769c235524" width="700"/><br>Fig 5. DO climatology at 80 m depth at Hoodsport, from ORCA data. (https://nvs.nanoos.org/Climatology?action=oiw:site:siteset1:ORCA_Hoodsport_site:plots:2:oxygen_conc)</p><br>
+
+Figure 5 suggests that Hoodsport DO is generally much higher in concentration than the values seen in my figures. I did notice that the downloaded data reports DO concentrations at a depth of 80 m, rather than a depth of 120 m (which is what I had been plotting). Thus, I took a look at Hoodsport bottom DO at a depth of ~80 m (Fig 6).
 
 <p style="text-align:center;"><img src="https://github.com/ajleeson/LO_user/assets/15829099/53c126a4-ba3e-4937-9048-f749220cc208" width="350"/><br>Fig 6. ORCA DO concentration and Hoodsport at a depth of ~80 m.</p><br>
 
