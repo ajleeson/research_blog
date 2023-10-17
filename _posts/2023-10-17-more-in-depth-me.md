@@ -1,9 +1,5 @@
 ##  In-depth Hood Canal evaluation
 
-Before I dive into technical work, here is a video of baby goats on my Uncle's farm in Taiwan.
-
-
-
 ## Re-cap
 
 When I last shared model evaluation results, I was focusing mostly on comparing model output to ORCA mooring observations. The corresponding bottom DO comparison plot is shown in Figure 1.
