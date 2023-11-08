@@ -70,7 +70,7 @@ I am the fifth speaker in the session "CP43A - Buoyancy-Driven Flows in Estuarie
 By the time of the conference, I really hope to have quantitative results to share.
 
 ---
-## Model NO3 ICs
+## Model DIN ICs
 
 We previously noted that modeled DIN tended to overestimate observed DIN (Fig 1). Back then, we wondered whether the issue was due to ICs, due to internal biogeochemical dynamics, or due to a combination of both.
 
@@ -94,9 +94,12 @@ Therefore, even though the model is having trouble with DIN, it is still doing d
 
 Last week Parker shared the observed average seasonal density profiles at ORCA buoy station locations.
 
-This week I added to this figure the *modeled* seasonal density profile at ORCA station locations. Note that the model profiles only include results from 2017, whereas the observations are averaged over many years.
+This week I added to this figure the *modeled* seasonal density profile at ORCA station locations (Fig 5). Note that the model profiles only include results from 2017, whereas the observations are averaged over many years.
 
-[FINISH THIS SECTION!!!!!!!!!!!!!!]
+<p style="text-align:center;"><img src="https://github.com/ajleeson/LO_user/assets/15829099/6dbf9fdf-c976-438d-8d58-4939e4242e18" width="800"/>Fig 5. Comparison of model and observation seasonal density profiles at ORCA buoy locations.
+</p><br>
+
+Note that this figure is preliminary for now, as I need to double-check my conversion of practical salinity to absolute salinity, my conversion of potential temperature to conservative temperature, and my final calculation of the density anomaly. I will share another update next week.
 
 ---
 ## Model evaluation and uncertainty
@@ -144,7 +147,7 @@ Does this level of detail seem appropriate?
 
 I also plan to explore more model evaluation literature this week.
 
-Another thought: I'm thinking that we may need to conduct spin-up experiments before conducting a formal model evaluation. I found some ostensibly relevant literature assessing the variability between different models in the CMIP5 attributed to different spin-up procedures (Séférian et al, 2016). I'll look into this more in the upcoming week as well. Parker and Jilian also shared some literature related to residence times and adjustment times that could be relevant to spin-up timescales.
+Another thought: I'm thinking that we may need to conduct spin-up experiments before formally quantifying uncertainty model uncertainty. I found some ostensibly relevant literature assessing the variability between different models in the CMIP5 attributed to different spin-up procedures (Séférian et al, 2016). I'll look into this more in the upcoming week as well. Parker and Jilian also shared some literature related to residence times and adjustment times that could be relevant to spin-up timescales.
 
 ---
 ## References
