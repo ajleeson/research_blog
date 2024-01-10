@@ -20,18 +20,18 @@ Setting up the model run involved a few different steps. I have broken them down
 
 To generate N-less WWTP forcing, I first copied the most up-to-date version of TRAPS forcing (trapsF00) into my LO_user folder. Then, I renamed the forcing folder as "trapsF01" and modified LO_user/forcing/trapsF01/make_wwtp_forcing.py to make WWTPs discharge zero NO3 and NH4 (Fig 1).
 
-<p style="text-align:center;"><img src="https://github.com/ajleeson/LO_user/assets/15829099/171be5c8-3136-4e1b-bdd3-3773b967e043" width="800"/>Fig 1. Change made to make_wwtp_forcing.py to make WWTPs discharge zero NO3 and NH4.
+<p style="text-align:center;"><img src="https://github.com/ajleeson/LO_user/assets/15829099/171be5c8-3136-4e1b-bdd3-3773b967e043" width="800"/><br>Fig 1. Change made to make_wwtp_forcing.py to make WWTPs discharge zero NO3 and NH4.
 </p><br>
 
 I used this new script to generate river and WWTP forcing for the year 2013. Figures 2 - 4 show the resulting forcing input timeseries for WWTPs, tiny rivers, and pre-existing LO rivers. Based on these figures, the forcing looks as expected.
 
-<p style="text-align:center;"><img src="https://github.com/ajleeson/LO_user/assets/15829099/9c5770bf-5705-4541-8cfd-5a9de33c453e" width="800"/>Fig 2. Resulting WWTP forcing timeseries. Note that NO3 and NH4 concentrations are always zero.
+<p style="text-align:center;"><img src="https://github.com/ajleeson/LO_user/assets/15829099/9c5770bf-5705-4541-8cfd-5a9de33c453e" width="800"/><br>Fig 2. Resulting WWTP forcing timeseries. Note that NO3 and NH4 concentrations are always zero.
 </p><br>
 
-<p style="text-align:center;"><img src="https://github.com/ajleeson/LO_user/assets/15829099/510e2072-6abb-458f-ae82-d46b72fcdcb0" width="800"/>Fig 3. Resulting tiny river forcing timeseries.
+<p style="text-align:center;"><img src="https://github.com/ajleeson/LO_user/assets/15829099/510e2072-6abb-458f-ae82-d46b72fcdcb0" width="800"/><br>Fig 3. Resulting tiny river forcing timeseries.
 </p><br>
 
-<p style="text-align:center;"><img src="https://github.com/ajleeson/LO_user/assets/15829099/f6d65994-89f1-442d-9985-34b46580d80a" width="800"/>Fig 4. Resulting pre-existing LO river forcing timeseries.
+<p style="text-align:center;"><img src="https://github.com/ajleeson/LO_user/assets/15829099/f6d65994-89f1-442d-9985-34b46580d80a" width="800"/><br>Fig 4. Resulting pre-existing LO river forcing timeseries.
 </p><br>
 
 ### All other forcing
@@ -42,7 +42,7 @@ To generate forcing for the atmosphere, tides, and ocean, I used the same forcin
 
 Each of these folders attempt to generate forcing using data stored in *my* LO_data directory on the remote machine (e.g. hycom data). However, I don't have these data stored in LO_data. They are stored in *Parker's* LO_data directory. Therefore, I copied the forcing folders into LO_user, and hardcoded Parker's LO_data directory into the script (Fig 5). This is not a method that will be robust to future change. However, it is good enough for now.
 
-<p style="text-align:center;"><img src="https://github.com/ajleeson/LO_user/assets/15829099/e3e86f44-b2e7-41f0-b29c-03590a2bc65d" width="500"/>Fig 5. Example code in LO_user/forcing/ocn01/Ofun.py that specifies the filepath to Parker's saved hycom data.
+<p style="text-align:center;"><img src="https://github.com/ajleeson/LO_user/assets/15829099/e3e86f44-b2e7-41f0-b29c-03590a2bc65d" width="500"/><br>Fig 5. Example code in LO_user/forcing/ocn01/Ofun.py that specifies the filepath to Parker's saved hycom data.
 </p><br>
 
 After making these changes, I could generate forcing on perigee.
@@ -55,12 +55,12 @@ Parker's long hindcast run is called "cas7_t0_x4b". So I have called this new ru
 
 In the forcing_list.csv file, I changed the name of the traps forcing from "trapsF00" to "trapsF01" (Fig 6).
 
-<p style="text-align:center;"><img src="https://github.com/ajleeson/LO_user/assets/15829099/d6892b81-1c46-4c5a-b701-5f19f20f3f1f" width="350"/>Fig 6. Update made in forcing_list.csv to use the new N-less TRAPS forcing.
+<p style="text-align:center;"><img src="https://github.com/ajleeson/LO_user/assets/15829099/d6892b81-1c46-4c5a-b701-5f19f20f3f1f" width="350"/><br>Fig 6. Update made in forcing_list.csv to use the new N-less TRAPS forcing.
 </p><br>
 
 Then in make_dot_in.py, I updated the filepath of lo_tools to be accessible from LO_user (Fig 7).
 
-<p style="text-align:center;"><img src="https://github.com/ajleeson/LO_user/assets/15829099/9a05dbe4-bc34-46d8-8eaa-fb9b1f6dec71" width="700"/>Fig 7. Change made in make_dot_in.py to allow access of lo_tools from the LO_user repo.
+<p style="text-align:center;"><img src="https://github.com/ajleeson/LO_user/assets/15829099/9a05dbe4-bc34-46d8-8eaa-fb9b1f6dec71" width="700"/><br>Fig 7. Change made in make_dot_in.py to allow access of lo_tools from the LO_user repo.
 </p><br>
 
 ### Setting up ROMS
@@ -69,7 +69,7 @@ Next, I set up the new github version of ROMS on klone. Following the same namin
 
 Then, I copied Parker's LO_roms_user/x4b folder in the LO_roms_user/x4b folder on my local pc. I made one small change in build_roms.sh to use my use my directory instead of Parker's on klone (Fig 8).
 
-<p style="text-align:center;"><img src="https://github.com/ajleeson/LO_user/assets/15829099/1d61b9da-13c8-4b63-9da8-1baf65a579b8" width="400"/>Fig 8. Modification in LO_roms_user/x4b/build_roms.sh to update root directory.
+<p style="text-align:center;"><img src="https://github.com/ajleeson/LO_user/assets/15829099/1d61b9da-13c8-4b63-9da8-1baf65a579b8" width="400"/><br>Fig 8. Modification in LO_roms_user/x4b/build_roms.sh to update root directory.
 </p><br>
 
 Then, I compiled ROMS. This process went rather smoothly.
