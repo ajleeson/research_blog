@@ -37,5 +37,3 @@ Figure 1 shows the hydrodynamic difference in Puget Sound, and Figure 2 shows th
 ### Summary
 
 While the perfect restart does not fully eliminate hydrodynamic differences, it does significantly reduce them compared to the OG N-less run. However, it seems that both a perfect restart **and** the same number of nodes (i.e. 10 nodes) are required to reproduce the hydrodynamics of the long hindcast run.
-
-While it would be best to have an N-less model run initialized with a perfect restart and 10 nodes, I have decided to let the current run continue (on 10 nodes now). After Ocean Sciences, we can revisit this topic of hydrodynamic deviations and perhaps re-run the N-less run with the same initial conditions as the long hindcast.
