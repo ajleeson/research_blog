@@ -21,7 +21,9 @@ Figure 1 shows the main comparison of hypoxic differences in Khangaonkar et al. 
 
 First, I tried to re-create similar figures using our LiveOcean results. Note that Khangaonkar et al. simulated 2014, while we simulated 2013, so we can't yet make a direct comparison between the two models.
 
-Figures 2 and 3 show LiveOcean results. Figure 2-a shows the numbers of days in which bottom DO < 2 mg/L in the natural run, while Figure 2-b shows how many more days the anthropgenic run had bottom DO < 2mg/L relative to the natural run. Figure 3 shows timeseries of bottom area with DO < 2mg/L.
+Figures 2 and 3 show LiveOcean results. Figure 2-a shows the numbers of days in which bottom DO < 2 mg/L in the natural run, while Figure 2-b shows how many more days the anthropgenic run had bottom DO < 2mg/L relative to the natural run. Note that Figure 2-a most closely replicates panel (c) in the figure from Khangaonkar et al., (2018). They both represent "natural" conditions in our experiments, except our LiveOcean runs includes anthropogenic river loading, while Khangaonkar et al.'s run does not.
+
+Figure 3 shows timeseries of bottom area with DO < 2mg/L.
 
 <p style="text-align:center;"><img src="https://github.com/ajleeson/LO_user/assets/15829099/48746906-f8d2-450e-a211-9ebf3eefd2b9" width="550"/><br>Fig 2. (a) Puget Sound map of natural run showing days with bottom DO < 2 mg/L. (b) Anthropogenic minus natural run. Blue indicates that the anthropogenic run had more days with bottom DO < 2 mg/L.</p><br>
 
@@ -53,7 +55,7 @@ The left panel in Figure 6 shows the grid cells included in the analysis above. 
 
 <p style="text-align:center;"><img src="https://github.com/ajleeson/LO_user/assets/15829099/da776886-3a9b-439b-9c49-46178d27feaf" width="500"/><br>Fig 6. Puget Sound maps with days in which bottom DO < 6 mg/L, with regions outside of Puget Sound cropped out.</p><br>
 
-For completion, Figure 7 shows a timeseries of the bottom water area with DO < 6 mg/L, corresponding to the region shown in Figure 6.
+For completion, Figure 7 shows a timeseries of the bottom water area with DO < 6 mg/L, corresponding to the region shown in Figure 6. Because the area with DO < 6 mg/L is much higher at the end of the year than it is at the beginning of the year, it seems that the spin-up time for this run was too short. Thus, it is even more important to continue the simulation through 2014. 
 
 <p style="text-align:center;"><img src="https://github.com/ajleeson/LO_user/assets/15829099/7b825102-2a8f-4609-9bf9-36da8e648f35" width="500"/><br>Fig 7. Puget Sound timeseries or area with DO < 6 mg/L. Area corresponds to colored region in Figure 5.</p><br>
 
