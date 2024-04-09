@@ -21,7 +21,7 @@ Figure 1 shows the main comparison of hypoxic differences in Khangaonkar et al. 
 
 First, I tried to re-create similar figures using our LiveOcean results. Note that Khangaonkar et al. simulated 2014, while we simulated 2013, so we can't yet make a direct comparison between the two models.
 
-Figures 2 and 3 show LiveOcean results. Figure 2-a shows the numbers of days in which bottom DO < 2 mg/L in the natural run, while Figure 2-b shows how many more days the anthropgenic run had bottom DO < 2mg/L relative to the natural run. Note that Figure 2-a most closely replicates panel (c) in the figure from Khangaonkar et al., (2018). They both represent "natural" conditions in our experiments, except our LiveOcean runs includes anthropogenic river loading, while Khangaonkar et al.'s run does not.
+Figures 2 and 3 show LiveOcean results. Figure 2-a shows the numbers of days in which bottom DO < 2 mg/L in the natural run, while Figure 2-b shows how many more days the anthropgenic run had bottom DO < 2mg/L relative to the natural run. Note that Figure 2-a most closely replicates panel (c) in the figure from Khangaonkar et al., (2018). They both represent "natural" conditions in our experiments, except our LiveOcean run includes anthropogenic river loading, while Khangaonkar et al.'s run does not.
 
 Figure 3 shows timeseries of bottom area with DO < 2mg/L.
 
