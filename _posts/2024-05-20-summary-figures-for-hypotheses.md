@@ -34,6 +34,13 @@ For hypothesis development, I will mostly focus on describing the average DO pat
 <p style="text-align:center;"><img src="https://github.com/ajleeson/LO_user/assets/15829099/c5499bbb-21df-49cb-9dc4-b985baa3b217" width="600"/><br>Fig 5. Summary of low DO over 2014-2019 simulation period.</p><br>
 
 ---
+## 2014 anthropogenic and natural comparison
+
+The 2014 natural simulation finally finished running early this week. I have not had time to dive into these results, but Figure 6 provides a preliminary comparison between anthropogenic and natural average bottom DO. 
+
+<p style="text-align:center;"><img src="https://github.com/ajleeson/LO_user/assets/15829099/31e64abc-c301-4136-b22d-1e299a35931c" width="600"/><br>Fig 6. Average bottom DO in Puget Sound in natural and anthropogenic runs.</p><br>
+
+---
 ## Proposed schedule
 
 Below I've put together my ideal plan for the remainder of my PhD. Some key milestones include my Master's defense at the end of this summer, quals in autumn, general exam in winter 2026, and final exam in spring 2027.
