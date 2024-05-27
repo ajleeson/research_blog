@@ -25,10 +25,10 @@ Let $C$ represent DO concentration.
 We will begin by considering the advection-diffusion equation (Wikipedia????)
 
 $$
-\frac{\partial C}{\partial t} = (\nabla \cdot \kappa \nabla C) - (\nabla \cdot \vec{u} C) + Q
+\frac{\partial C}{\partial t} = (\nabla \cdot \Kappa \nabla C) - (\nabla \cdot \vec{u} C) + Q
 $$
 
-where $\kappa$ is eddy diffusivity, $\vec{u} = (u,v,w)$ is the velocity vector, and $Q$ are our source and sink terms. 
+where $\Kappa$ is eddy diffusivity, $\vec{u} = (u,v,w)$ is the velocity vector, and $Q$ are our source and sink terms. 
 
 Note that $(\nabla \cdot \vec{u} C)$ is the divergence of flux, where $\vec{u} C$ is the flux of DO. 
 
@@ -36,7 +36,7 @@ Now let's volume integrate our advection diffusion equation over our control vol
 
 $$
 \int_{CV} \frac{\partial C}{\partial t} \mathrm{d}V = 
-\int_{CV} (\nabla \cdot \kappa \nabla C) \mathrm{d}V - 
+\int_{CV} (\nabla \cdot \Kappa \nabla C) \mathrm{d}V - 
 \int_{CV} (\nabla \cdot \vec{u} C) \mathrm{d}V + 
 \int_{CV} Q \mathrm{d}V
 $$
@@ -54,7 +54,7 @@ Thus, we have:
 
 $$
 \frac{\partial}{\partial t}\int_{CV} C \mathrm{d}V = 
-\int_{CV} (\nabla \cdot \kappa \nabla C) \mathrm{d}V - 
+\int_{CV} (\nabla \cdot \Kappa \nabla C) \mathrm{d}V - 
 \int_{CV} (\nabla \cdot \vec{u} C) \mathrm{d}V + 
 \int_{CV} Q \mathrm{d}V
 $$
@@ -63,7 +63,7 @@ Now we can invoke Gauss' theorem to convert the diffusion and advection volume i
 
 $$
 \frac{\partial}{\partial t}\int_{CV} C \mathrm{d}V = 
-\oint (\kappa \nabla C \cdot \vec{n}) \mathrm{d}S - 
+\oint (\Kappa \nabla C \cdot \vec{n}) \mathrm{d}S - 
 \oint (\vec{u}C \cdot \vec{n}) \mathrm{d}S + 
 \int_{CV} Q \mathrm{d}V
 $$
@@ -73,12 +73,27 @@ The time rate of change of DO in the control volume is equal to the net diffusio
 ### Diffusion term
 
 $$
-\int_{CV} (\nabla \cdot \kappa \nabla C) \mathrm{d}V = 
-\kappa_H \bigg( \frac{\partial C}{\partial x} \Big|_{x = x_0 + \Delta x} - \frac{\partial C}{\partial x} \Big|_{x = x_0}\bigg) (\Delta y \Delta z) +
-\kappa_V \bigg( \frac{\partial C}{\partial z} \Big|_{z = - \xi} \bigg) (\Delta x \Delta y)
+\int_{CV} (\nabla \cdot \Kappa \nabla C) \mathrm{d}V = 
+\Kappa_H \bigg( \frac{\partial C}{\partial x} \Big|_{x = x_0 + \Delta x} - \frac{\partial C}{\partial x} \Big|_{x = x_0}\bigg) (\Delta y \Delta z) +
+\Kappa_V \bigg( \frac{\partial C}{\partial z} \Big|_{z = - \xi} \bigg) (\Delta x \Delta y)
 $$
 
 where we have assumed there is no diffusion in $y$, since the edges of the domain extend to the channel edges. We also assume no diffusion at the bottom ($z=-H$). 
+
+I have also assumed two different eddy diffusivities. $\Kappa_H$ is the horizontal eddy diffusivity and $\Kappa_V$ is the vertical eddy diffusivity.
+
+Assuming that the water column is vertucally stratified, then I expect $\Kappa_H \gg \Kappa_V$. 
+
+However, I also assume that there is a strong oxygen gradient with the oxycline roughly aligned with the pycnocline. In which case, I expect $\frac{\partial C}{\partial x} \ll \frac{\partial C}{\partial z}$.
+
+Furthermore, I anticipate that the horizontal advection will usually be much larger than the horizontal diffusion. Thus, the most significant diffusion term is the vertical term. This results in:
+
+$$
+\int_{CV} (\nabla \cdot \Kappa \nabla C) \mathrm{d}V \approx
+\Kappa_V \bigg( \frac{\partial C}{\partial z} \Big|_{z = - \xi} \bigg) (\Delta x \Delta y)
+$$
+
+However, this thought process feels rather hand-wavy to me, and I'll revisit some notes to see if I can come up with better justification.
 
 ### Advection term
 
