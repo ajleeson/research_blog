@@ -10,8 +10,8 @@ $$
 \mathrm{advection\ in} - 
 \mathrm{advection\ out} + \\
 \mathrm{primary\ production} - 
-\mathrm{water\ column\ respiration} -
-\mathrm{benthic\ respiration}
+\mathrm{O_2\ consumed\ in\ nitrification} -
+\mathrm{water\ column\ respiration}
 $$
 
 Where C is the concentration of DO in an arbitrary Puget Sound inlet. Details of the math are listed below.
@@ -126,22 +126,39 @@ u(x_0)C(x_0) - u(x_0+\Delta x)C(x_0+\Delta x)
 (u_{out}C_{out} - u_{in}C_{in})(\Delta y \Delta z)
 $$
 
-### Source and sink term
+### Source and sink terms
 
 Our main source terms come from photosynthesis, and is only applicable if the water column is shallow enough such that light reaches the deep water.
 
-We have two sink terms. First, we have DO lost to water column respiration. Second, we have DO lost to benthic respiration (which is respiration of any remaining organic matter that reaches the bottom of the channel).
+We have two sink terms. First, we have DO lost to water column respiration. Second, we have DO lost during oxidation of NH4 to NO3 (Fennel et al., 2013).
 
-Combining these source/sinks together, we obtain:
+Fennel et al. (2013) developed the following equation to represent the biogeochemical dynamics of oxygen:
 
 $$
-\int_{CV} Q \mathrm{d}V = 
-\int_{CV} \mathrm{PP} \  \mathrm{d}V - 
-\int_{CV} \mathrm{Resp}_{wc} \  \mathrm{d}V -
-\int_{CV} \mathrm{Resp}_{b} \  \mathrm{d}V
+\frac{\partial C}{\partial t} = \mu_{max} f(I)
+\big[ L_{NO_3}R_{O_2:NO_3} + L_{NH_4}R_{O_2:NH_4}\big] Phy - ... \\
+ 2 \hat{n} NH_4
+- R_{O_2:NH_4}\big[ l\ Zoo + \hat{r}_{SD}\ SDet + \hat{r}_{LD}\ LDet \big]
 $$
 
-Where PP indicates the rate of DO created from primary productivity, and Resp_wc and Resp_b indicate the rate of respiration in the water column and benthos, respectively.
+Where the first term on the RHS is the oyxgen production from photosynthesis, the second term is the oxygen used during oxidation of NH4 to NO3, and the last term represents respiration from zooplankton and from microbes that break down detritus. 
+
+mu_max is the maximum growth rate of phytoplankton and is a constant (Fennel et al., 2013). f(I) is a light limitation term that varies with depth (Fennel et al., 2006; Fennel et al., 2013). L_NO3 and L_NH4 are Michaelis-Menton nutrient limitations which vary with nutrient concentration (Fennel et al., 2006). R terms are constants and indicate mole ratios of oxygen to nutrients (Fennel et al., 2013). n-hat is nitrification flux and varies with depth (Fennel et al., 2006). l is a constant zooplankton excretion rate (Fennel et al., 2013). The r-hat terms are remineralization rates and vary with DO concentration (Fennel et al., 2013). 
+
+These are extremely complicated quations. The zooplankton, phytoplankton, detritus, and nutrient concentrations all depend on each other, most of their rate equations are implicit, and they all are influenced by advection. Rather than diving too deep into this mathematical mess, let's stick with the single biogeochemical equation for oxygen at the beginning of this section, and for now keep in mind that these other terms each have their own source/sink and advective dynamics.
+
+Now, let's volume integrate our biogeochemisty source/sink equation:
+
+$$
+\frac{\partial}{\partial t}\int_{CV} C \mathrm{d}V=
+\mu_{max} \int_{CV} f(I)
+\big[ L_{NO_3}R_{O_2:NO_3} + L_{NH_4}R_{O_2:NH_4}\big]
+Phy \ \mathrm{d}V - ... \\
+ 2 \int_{CV} \hat{n} NH_4 \ \mathrm{d}V
+- R_{O_2:NH_4} \int_{CV} \big[ l\ Zoo + \hat{r}_{SD}\ SDet + \hat{r}_{LD}\ LDet \big] \mathrm{d}V
+$$
+
+If organic matter (phytoplankton, detritus) reaches the benthos, then they are remineralized immediately (Fennel et al., 2006). In these cases, there is an additional benthic oxygen loss term that is not represented in the equation above. From my understanding, the amount of DO remineralized is related to the amount of organic matter by stoichiometry.
 
 ### Putting it all together
 
@@ -150,14 +167,20 @@ Combining everything together, we have:
 $$
 \frac{\partial}{\partial t}\int_{CV} C \mathrm{d}V = 
 \kappa_V \bigg( \frac{\partial C}{\partial z} \Big|_{z = - \xi} \bigg) (\Delta x \Delta y) + 
-(u_{in}C_{in} - u_{out}C_{out})(\Delta y \Delta z) + \\
-\int_{CV} \mathrm{PP} \  \mathrm{d}V - 
-\int_{CV} \mathrm{Resp}_{wc} \  \mathrm{d}V -
-\int_{CV} \mathrm{Resp}_{b} \  \mathrm{d}V
+(u_{in}C_{in} - u_{out}C_{out})(\Delta y \Delta z) + ... \\
+\mu_{max} \int_{CV} f(I)
+\big[ L_{NO_3}R_{O_2:NO_3} + L_{NH_4}R_{O_2:NH_4}\big]
+Phy \ \mathrm{d}V - ... \\
+ 2 \int_{CV} \hat{n} NH_4 \ \mathrm{d}V
+- R_{O_2:NH_4} \int_{CV} \big[ l\ Zoo + \hat{r}_{SD}\ SDet + \hat{r}_{LD}\ LDet \big] \mathrm{d}V
 $$
 
 ---
 # References
+
+Fennel, K., Wilkin, J., Levin, J., Moisan, J., O'Reilly, J., & Haidvogel, D. (2006). Nitrogen cycling in the Middle Atlantic Bight: Results from a three‐dimensional model and implications for the North Atlantic nitrogen budget. *Global Biogeochemical Cycles*, 20(3).
+
+Fennel, K., Hu, J., Laurent, A., Marta‐Almeida, M., & Hetland, R. (2013). Sensitivity of hypoxia predictions for the northern Gulf of Mexico to sediment oxygen consumption and model nesting. *Journal of Geophysical Research: Oceans*, 118(2), 990-1002.
 
 Kundu, P.K. and Cohen, I.M. (2004) Fluid Mechanics. Elsevier Academic Press, Cambridge.
 
