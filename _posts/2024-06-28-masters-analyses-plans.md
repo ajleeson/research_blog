@@ -11,7 +11,7 @@ In the following section, I describe my plans to address these questions. Some o
 One of the end goals of this Master's data exploration is to identify key characteristics that appear to correlate with hypoxia. After my defense, I plan to conduct more detailed hypothesis testing to explore why these key characteristics might be driving hypoxia. 
 
 ---
-<details><summary><strong>Types of Figures</strong></summary>
+## Types of Figures
 
 Below I list several types of figures that I have generated in the past. I think of this list as my current tool box, as it will be rather straightforward to generate similar figures, but perhaps for different state variables.
 
@@ -20,24 +20,39 @@ Below I list several types of figures that I have generated in the past. I think
 **Time series at a single lat/lon coordinate.**
 - Pros: Multiple state variables in one plot
 - Cons: Lose spatial resolution (i.e. don't resolve depth and don't resolve horizontal)
-Example: ocean sciences figure
+- Example in Figure 1 below
 
-**Depth vs. time colors by state variable**
-- Pros: Resolve vertical structure of state variables, and can see how the entire water column evloes over time
-- Cons: Can only look at one point at a time, and can't plot multiple state variables on the same axis
-Example: moor depth vs time property plot
+<p style="text-align:center;"><img src="https://github.com/ajleeson/LO_user/assets/15829099/ab7badb6-62a4-40d1-b1b4-d03a66c37789" width="500"/><br>Fig 1. Example time series of bottom DO and surface chlorophyll at point in Main Basin in 2013 (data from mooring extraction).</p><br>
+
+**Depth vs. time property plot**
+- Pros: Resolve vertical structure of state variables, and can see how the entire water column evolves over time
+- Cons: Can only look at one lat/lon point at a time, and can't plot multiple state variables on the same axis
+- Example in Figure 2 below
+
+<p style="text-align:center;"><img src="https://github.com/ajleeson/LO_user/assets/15829099/8b147a72-ab70-498b-9e0d-0d47faf3248c" width="800"/><br>Fig 2. Example depth vs. time property plot from mooring extraction in Main Basin in 2013.</p><br>
 
 ### Tools for addressing "where"
 
-Colormaps of the Puget Sound region
+**Colormaps of the Puget Sound region**
 - Pros: Visualize spatial distribution of state variables across region
-- Cons: No depth resolution, and not temporal resolution (either a snapshot, or averaged over time)
-Example: average bottom DO concentration
+- Cons: No depth resolution and no temporal resolution (either a snapshot, or averaged over time)
+- Example in Figure 3 below
+
+<p style="text-align:center;"><img src="https://github.com/ajleeson/LO_user/assets/15829099/9a736c57-a26e-4a91-b487-0dc3344c39b7" width="600"/><br>Fig 3. Example maps of average bottom DO in Puget Sound during hypoxic season, and average number of hypoxic days (average of 2014 - 2019 hypoxic seasons).</p><br>
 
 ### Miscellaneous
 
-2D histograms
-New figure: state variable along transect
+**2D histograms**
+- Pros: See relationship between two state variables at all times and all lat/lon cooridnates
+- Cons: Cannot resolve how state variables vary in space or time.
+- Example in Figure 4 below
+
+<p style="text-align:center;"><img src="https://github.com/ajleeson/LO_user/assets/15829099/90b95422-07af-4fd7-ab73-dcc8a5dc9bcf" width="600"/><br>Fig 4. Example 2D histogram of S-level of DO minima vs. DO minima concentration for all lat/lon grid cells on every day of the year. 100 x 30 bins.</p><br>
+
+**State variabl along a transect**
+This is a new type of figure that I have not made yet. Hopefully it can help us understand how state variables vary in space.
+- Pros: See how state variable varies in the vertical and along a transect.
+- Cons: No temporal resolution
 
 ### Overall thoughts
 
@@ -45,12 +60,8 @@ No tool is solely able to answer a single question. The temporal and spatial com
 
 For instance, I can create colormaps of bottom DO in Puget Sound for every month of the year. Based on these figures, we can begin to identify when hypoxia may be developing in different inlets. This analysis will work even if hypoxia develops at different times in different inlets. Then, I can pick a few inlets, and look at timeseries of biogeochemical state variables (or physical variables, like buoyancy frequency). From these timeseries, we can then explore whether differences in the timing of nutrient availability, or blooms, or stratification, might explain differences in timing of hypoxia. 
 
-</details>
-
-Need to add example figures
-
 ---
-<details><summary><strong>Where does hypoxia occur?</strong></summary>
+## Where does hypoxia occur?
 
 I hypothesize that hypoxia is most likely to occur where there is:
 - Strong stratification
@@ -99,6 +110,10 @@ Realistically, I do not think I have enough time before August 9 to learn how to
 
 **Lots of detritus**
 
+
+
+Note that detritus does not tell us where a bloom occurred, it just tells us where the organic matter ends up.
+
 **Depth**
 
 This is a bonus section about depth, based on prior results. Figure ??? is an image I shared a few weeks ago. They are 2D histograms of DO minima depth vs. DO minima concentration. 
@@ -113,13 +128,9 @@ My guess is that this low DO water at depth is actually coming from deep water i
 
 Note, this is just a hypothesis based on the results. I can verify this hypothesis by calculating the deepest depth that organic matter can sink based on sinking and respiration rates in LiveOcean (or I can see what number Dakota comes up with when she's done with her homework).
 
-</details>
-
-Don't forget comments on detritus hypothesis
-
 ---
 
-<details><summary><strong>When does hypoxia occur?</strong></summary>
+## When does hypoxia occur?
 
 
 We lose spatial resolution when we look at time series data. Here I propose two different ways of analyzing temporal data. First, a system-wide approach across all of Puget Sound. Then, a more focused analysis on just a few inlets.
@@ -176,13 +187,11 @@ From these time series, I can hopefully resolve the cycle of nutrients, phytopla
 
 These time series will hopefully give me an idea of whether the timing or magnitude of different events varies between the selected inlets.
 
-</details>
-
 Would it be valuable to look at time series of hypoxic volume normalized by inlet volume, for each of the 21 inlets. To compare the timing of if and when hypoxia develops in each of the inlets?
 
 ---
 
-<details><summary><strong>Comparisons between inlets</strong></summary>
+## Comparisons between inlets
 
 I am interested in comparing the characteristics of different terminal inlets throughout Puget Sound (Fig. ???).
 
@@ -207,5 +216,6 @@ Why do I want to make scatter plots and conduct correlation tests using only 21 
 
  Hopefully these 21 terminal indlets in Puget Sound are reasonably distinct from one another. However, I will caveat by saying that I still do not think think that these 21 points are completely independent. Realistically, inlets in Whidbey Basin might be more similar to each other than to inlets in other basins, and so on and so forth.
 
-</details>
+---
+## Comparison to observations...
 
