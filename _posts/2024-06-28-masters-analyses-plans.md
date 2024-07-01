@@ -36,15 +36,18 @@ The list below summarizes the figures I plan to generate:
     - average hypoxia season bottom DO vs. average tidal current
     - average hypoxia season bottom DO vs. residence time (if time permitting; need TEF)
     - average hypoxia season bottom DO vs. WWTP loading into inlet (still brainstorming...)
+    - average hypoxia season bottom DO vs. average depth-integrated phytoplankton
+    - average hypoxia season bottom DO vs. average depth-integrated detritus
 - Parameter space scatter plot with 21 points
     - Mixing number vs. gradient Richardson number, colored by average bottom DO
 - Comparison to obervations
     - Property-property plots using 6 years of data throughout Puget Sound
+    - Report RMSE and bias
     - Compare time series at a few select inlets (e.g. near Lynch Cove)
 - Extra math
     - Calculate max depth to which detritus can sink in LiveOcean, using sinking rate and respiration rate
 
-In the following sections, I describe my plans to address these questions in more detail.
+In the following sections, I describe my plans to address these questions and make these figures in more detail.
 
 One of the end goals of this Master's data exploration is to identify key characteristics that appear to correlate with hypoxia. After my defense, I plan to conduct more detailed hypothesis testing to explore why these key characteristics might be driving hypoxia. 
 
@@ -97,7 +100,7 @@ This is a new type of figure that I have not made yet. Hopefully it can help us 
 
 No tool is solely able to answer a single question. The temporal and spatial components are always important to consider. However, we can use a combination of tools to help narrow down what we want to look at.
 
-For instance, I can create colormaps of bottom DO in Puget Sound for every month of the year. Based on these figures, we can begin to identify when hypoxia may be developing in different inlets. This analysis will work even if hypoxia develops at different times in different inlets. Then, I can pick a few inlets, and look at timeseries of biogeochemical state variables (or physical variables, like buoyancy frequency). From these timeseries, we can then explore whether differences in the timing of nutrient availability, or blooms, or stratification, might explain differences in timing of hypoxia. 
+For instance, I can create colormaps of bottom DO in Puget Sound during the hypoxic season. Based on these figures, we can identify which inlets become hypoxic and which do not. Then, I can pick a few inlets, and look at time series of biogeochemical state variables (or physical variables, like buoyancy frequency). From these timeseries, we can then explore whether differences in the timing of nutrient availability, or blooms, or stratification, might explain differences in timing or intensity of hypoxia. 
 
 ---
 ## Where does hypoxia occur?
@@ -121,7 +124,7 @@ $$ N = \sqrt{-\frac{g}{\rho_0} \frac{\partial \rho(z)}{\partial z}} \
  \Bigg|_{z = z_{rho}^{\sigma}} \approx 
 \frac{\rho(z_{rho}^{\sigma}) - \rho(z_{rho}^{\sigma-1})}{z_{rho}^{\sigma} - z_{rho}^{\sigma-1}}$$
 
-Note that max N tells us the resulting stratification after all turbulent processes have acted on a water body. A location could have strong river input, but could have extermely strong turbulence such that there is a small resulting max N. Thus, I need to be aware that max N does not tell us the strength of turbulence or the ratio of freshwater input. It simply tells us the resulting stratification after all of these other processes have happened.
+Note that max N tells us the resulting stratification after all turbulent processes have acted on a water body. A location could have strong river input, but could have extermely strong turbulence such that there is a small resulting max N. Thus, I need to be aware that max N does not tell us the strength of turbulence or the intensity of freshwater input. It simply tells us the resulting stratification after all of these other processes have happened.
 
 **Weak turbulence**
 
@@ -137,11 +140,11 @@ LiveOcean also outputs eddy viscosity and eddy diffusivity. I thought of looking
 
 When circulation is weak, I expect that bottom waters will not be renewed often and that an inlet is thus more susceptible to hypoxia. I imagine that the best way to look at circulation would be to use the TEF method. 
 
-Ideally, I want to calculate the flushing time of each of the 21 inlets defined in Figure ??? in the section "Comparisons between inlets," where flushing time is:
+Ideally, I want to calculate the flushing time of each of the 21 inlets defined in Figure 8 in the section "Comparisons between inlets," where flushing time is:
 
 $$ T_{flush} = \frac{V}{Q}$$
 
-as defined in MacCready et al. (2021) where V is the volume of the inlet and Q is Qout or Qin calculate from TEF. I could draw a section at the  mouth of each of the 21 inlets and determine the Qin and Qout flowing in and out of the terminal inlet.
+as defined in MacCready et al. (2021) where V is the volume of the inlet and Q is Qout or Qin calculated from TEF. I could draw a section at the  mouth of each of the 21 inlets and determine the Qin and Qout flowing in and out of the terminal inlet.
 
 Realistically, I do not think I have enough time before August 9 to learn how to do a TEF calculation, and do it well. However, I want to bookmark this thought and revisit it later. 
 
@@ -163,7 +166,7 @@ This is a bonus section about depth, based on prior results. Figure 5 is an imag
 
 Based on this figure, it appears that hypoxia does not develop in waters shallower than ~10 m. 
 
-We also observe that hypoxia does not develop in waters deeper than ~180 m. I hypothesize that this is due to the limit of sinking and respiration rate in LiveOcean. Organic matter will be fully respired before they can sink to a depth deeper than ~180 m. However, if this depth limitation were true, then I would have expected a gradual transition in depth from 180 m to deeper water as DO increases. But this is not what we observe. There is a hard cutoff of ~180 m up until ~ 3.75 mg/L where suddenly there are points that extend throughout the entire water column.
+We also observe that hypoxia does not develop in waters deeper than ~180 m. I hypothesize that this is due to the limit of sinking and respiration rate in LiveOcean. Organic matter will be fully respired before they can sink to a depth deeper than ~180 m. Interestingly, there is a hard cutoff of ~180 m up until ~ 3.75 mg/L where suddenly there are points that extend throughout the entire water column.
 
 My guess is that this low DO water at depth is actually coming from deep water intrusions over Admiralty Sill. In other words, these deep low DO waters are of oceanic origin, and not solely a result of biogeochemical processes within Puget Sound.
 
@@ -199,7 +202,9 @@ The state variables I want to include are:
 - max N (to see if there is seasonality to when stratification sets up)
 - bottom DO
 
-How to calculate depth of photic zone? Look at photic zone because these are the nutrients that are available for uptake.
+I want to look at the photic zone because that is where there is sufficient light for phytoplankton to take up nutrients.
+
+One remaining question I have: how will I go about calculating depth of photic zone? Is it constant throughout Puget Sound (based on the light attenuation coefficient value I set inside the Salish Sea). It will be challenging to depth integrate only up to a certain depth (e.g. 50 m), because the height of the sigma layers is constantly changing.
 
 ### Select inlet temporal anslysis
 
@@ -212,7 +217,7 @@ The inlets I am interested in analyzing more deeply are:
 
 This gives me 5 locations to look at, which feels manageable.
 
-First, I will conduct a mooring extraction from the rough center of each of these inlets/bays. Then, I will look at time series of the same variables listed in the above section:
+First, I will conduct a mooring extraction from the rough center of each of these inlets/bays. Or, if there are observational data available, I will conduct a mooring extraction from the same location as the observations. Then, I will look at time series of the same variables listed in the above section:
 - photic-zone integrated NO3 
 - photic-zone integrated NH4
 - depth-integrated phytoplankton
@@ -234,6 +239,9 @@ These time series will hopefully give me an idea of whether the timing or magnit
 
 I am interested in comparing the characteristics of different terminal inlets throughout Puget Sound (Fig. 8)
 
+For this inlet analysis, I plan to conduct a box extraction on each of the 21 inlets. They are small, so hopefully this will not be too large of an effort.
+I can also crop the data from the Puget Sound box extractions I have already conducted. This may be a simpler approach.
+
 <p style="text-align:center;"><img src="https://github.com/ajleeson/LO_user/assets/15829099/9142edc5-e52b-4c32-a45b-6035dfa07614" width="800"/><br>Fig 8. Inlets in Puget Sound that I will compare.</p><br>
 
 Some of these inlets experience seasonal hypoxia, while others generally have high DO concentrations. Like Alex suggested, we could learn something by plotting these 21 inlets on some relevant nondimensional parameter space, and coloring inlets by average bottom DO.
@@ -251,7 +259,9 @@ Then I can calculate any statistically significant correlation coefficients (Fig
 
 Why do I want to make scatter plots and conduct correlation tests using only 21 points, rather than using all of the data in the 2D histograms? Looking at these 21 inlets is a way to subsample the data. Otherwise, I am worried that by looking at every grid cell on every day of the year, my points would not all be independent (spatially adjacent and temporally adjacent points would not be independent!). Additionally, large inlets would inherently have more data points than smaller inlets.
 
-Hopefully these 21 terminal inlets in Puget Sound are reasonably distinct from one another. However, I still do not think think that these 21 points are completely independent. I imagine that inlets in within the same basin (e.g. Whidbey) are more likely to have the similar amounts of organic matter or nutrients to each other than to other basins.
+Hopefully these 21 terminal inlets in Puget Sound are reasonably distinct from one another. However, I still do not think think that these 21 points are completely independent. I imagine that inlets within the same basin (e.g. Whidbey) are more likely to have the similar amounts of organic matter or nutrients to each other than to other basins.
+
+Perhaps it would be wise to also consider plotting average bottom DO vs. average depth-integrated phytoplankton, or detritus. These biogeochemical parameters may have a correlation to DO as well.
 
 Note that I am still trying to think of ways to *quantify* WWTP contributions into different inlets.
 
@@ -287,7 +297,13 @@ $$ \frac{\partial \mathbf{u}}{\partial z} =
     \Bigg[ \frac{v(z_{rho}^{\sigma}) - v(z_{rho}^{\sigma-1})}{z_{rho}^{\sigma} - z_{rho}^{\sigma-1}}\Bigg]^2
 }$$
 
+Note that latex is rendering oddly in the blog. There is nothing missing from the boxes above. The square root symbol simply seems to be too large, and part of the line is getting replaced by boxes.
+
 I think this method gets us the appropriate magnitude of shear, taking into account shear of both u and v.
+
+However, I have another issue. u and v vary with time. How do I ensure that the values of u and v that I use to calculate shear are appropriate? 
+
+In hindsight, I'm not convinced that the gradient Richardson number is the best way to proceed. I'm more convinced by the Mixing number:
 
 **Mixing number**
 
@@ -296,9 +312,9 @@ The mixing number was used in the final estuarine parameter space figure in Geye
 $$ M = \sqrt{\frac{C_D U_T^2}{\omega N_o H^2}}$$
 
 where:
-$$ C_D = (1-2.5) \times 10^{-3} $$
-$$ U_T^2 = \bar{u}^2 + \bar{v}^2 $$
-$$ \omega = \mathrm{tidal\ frequncy} $$
+$$ C_D = (1-2.5) \times 10^{-3} \ , $$
+$$ U_T^2 = \bar{u}^2 + \bar{v}^2 \ ,$$
+$$ \omega = \mathrm{tidal\ frequncy} \ ,$$
 $$ N_o = \sqrt{\frac{\beta g s_{ocean}}{H}} \ \mathrm{and} \ \beta = 7.7 \times 10^ {-4}$$
 
 I already plan to calculate average tidal current, U_T, and average depth, H. The biggest challenge for me will be to estimate the tidal frequency and ocean salinity. I need to dig into the LiveOcean inputs find a way to estimate these values.
@@ -321,7 +337,8 @@ I can also make maps of average monthly state variable values. This will give us
 I will also continue efforts to compare model output to observations. 
 For the model data comparison, I will focus solely in the Puget Sound region. 
 
-I will start by making property-property plots for all six years of available data. 
-If we have observations in locations in Lynch Cove, Elliot Bay, Port Susan, or an inlet in South Sound, then I will plan to extract time series from the same lat/lon coordinate as the observations were taken. 
+I will start by making property-property plots for all six years of available data. In the thesis, I would like to report RMSE and bias for relevant state variabled (e.g. DO or nutrients).
+
+If we have observations in locations in Lynch Cove, Elliot Bay, Port Susan, or an inlet in South Sound, then I will plan to extract time series from the same lat/lon coordinate as the observations were taken, and plot observations and model output time series on the same axis.
 
 I already know we have an orca buoy near Lynch Cove. Perhaps I can find a inlet in South Sound that will work. I need to check our observational records again, but I do not think we have data in Port Susan, or much in the Whidbey Inlets (the Penn Cove data are too recent to compare.)
