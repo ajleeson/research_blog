@@ -25,7 +25,7 @@ Figure 1 shows the resulting scatterplot of average Aug/Sep bottom DO vs. averag
 ---
 ## Relevant timescales
 
-This week I also re-visited the NPZD equations in Davis et al. (2014) and Siedlecki et al. (2015). Per Parker's advice, I tried calculated relevant timescales that will be good fore me to keep in mind.
+This week I also re-visited the NPZD equations in Davis et al. (2014) and Siedlecki et al. (2015). Per Parker's advice, I calculated relevant timescales that will be good fore me to keep in mind.
 
 The average depth of my 21 inlets is roughly 40 m. In 40 m of water, it will take 2.5 days for small detritus to sink to the bottom, but only 1/4 of a day for large detritus to sink to the bottom. 
 The respiration timescale is much longer than the sinking timescale. The e-folding timescale of remineralization/respiration is 10 days. Thus, in shallow waters, I would expect that a large fraction of small detritus will sink to the bottom before it is fully respired in the water column. An even greater fraction of large detritus will reach the bottom without being respired.
