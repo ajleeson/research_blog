@@ -86,7 +86,7 @@ Figure 5 shows the inlet domain for the Lynch Cove budget analysis.
 
 <p style="text-align:center;"><img src="https://github.com/user-attachments/assets/4cae2cd6-11f5-4001-b4d6-f177e61eed52" width="200"/><br>Fig 5. Lynch Cove budget domain: everything to the right of the section line.</p><br>
 
-Figure 6 shows the resulting budget.
+Figure 6 shows the resulting budget. My big issue: vertical exchange is a source term for surface DO in winter, and a loss term for bottom DO in winter. This is the opposite of what I would expect.
 
 <p style="text-align:center;"><img src="https://github.com/user-attachments/assets/b6b9f7b4-365b-4e68-b352-9bd758fce445" width="800"/><br>Fig 6. Lynch Cove budget results.</p><br>
 
@@ -98,6 +98,7 @@ Figure 7 shows the error term (sum of surface and bottom vertical exchange). The
 ## Questions and open items
 
 - What are the interface depths for the other 21 inlets, especially those that may not have as clear of an interface as Lynch Cove?
+- Why is the vertical exchange term the opposite of what I would expect? Is this due to the exchange flow term having the incorrect sign?
 - Is the sign of the exchange flow term correct?
     - Something else that makes me suspicious: the seasonal cycle of the exchange flow term in Lynch Cove is opposite of the seasonal cycle in the Salish Sea
 - Was it correct to multiply consumption terms by -1? Are there any other terms with a flipped sign?
