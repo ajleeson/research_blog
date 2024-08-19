@@ -63,6 +63,10 @@ I plan to average the budget terms over different time intervals (one bar chart 
 
 I don't have enough inlets to conduct rigorous statistical tests. However, I could still qualitatively assess whether the largest terms in the budget are different in the oxygenated vs. hypoxic inlets.
 
+**Other thoughts**
+
+Alex and I had a meeting two weeks ago, and we discussed combining the results of the new budget analysis and the old scatter plot analysis I was working on before. I still can't quite visualize what this would look like, but I like the idea of using results from the budget analysis to shed more light on whatever is still buried in the scatter plot analysis.
+
 ---
 ## Takeaways from meeting with Jilian
 
@@ -71,6 +75,7 @@ I met with Jilian on Monday morning. She helped answer some of my questions rega
 A couple of questions came up that I wanted to discuss in more depth:
 
 1. I'd like to revisit Alex's question about using the error term as the vertical exchange term. Would it be more robust to calculate the vertical exchange term using other model output, such as the vertical velocity and eddy diffusivity. A question for Alex: how have you calculated vertical exchange using observations in the past?
+
 2. Is the TEF exchange flow or the Eulerian exchange flow more appropriate for a two-layer budget? Because we are not calculating any othe terms (e.g. respiration rate) within different salinity classes, does it still make sense to mix TEF exchange flow with a depth-based analysis for all other budget terms? Using the TEF analysis, could we accidentally introduce more error to the vertical exchange term? What if we called the Eulerian exchange flow a "horizontal advection" term rather than an "exchange flow" term?
 
 ---
