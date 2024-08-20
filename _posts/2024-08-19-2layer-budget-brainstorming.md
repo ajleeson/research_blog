@@ -90,12 +90,22 @@ Figure 3 shows the result of the volume budget. Given that the error term is rel
 ---
 ## TEF volume budget
 
-Like we discussed last week, I also plan to create a volume budget using the TEF framework. Jilian just sent me her code today, and I will try to put this together before our meeting.
+Like we discussed last week, I also tried to create a volume budget using the TEF framework. Jilian just sent me her code on Monday, and I tried to adapt it for the Lynch Cove inlet. Figure 4 shows the result.
+
+<p style="text-align:center;"><img src="https://github.com/user-attachments/assets/d21b6bd7-0b54-41b1-8b6a-d36da0a1c499" width="800"/><br>Fig 4. Lynch Cove volume budget using TEF framework for exchange flow terms.</p><br>
+
+I wasn't able to fully use Jilian's code, because I seem to be missing some intermediate files for the storage and TRAPS terms. However, I was at least able to calculate the exchange flow term from the tef2 output.
+
+I also recognized that the Eulerian exchange flow term in Figure 3, and this TEF exchange flow term are nearly identical if I apply a Godin filter to the EU terms rather than a 10-day Hanning window filter.
+
+This raises another question: what type of filter is best for this analysis?
 
 ---
-## Monthly density and oxygen profiles
+## Seasonal density and oxygen profiles
 
-In progress. I'll try to add this before we meet in the morning.
+<p style="text-align:center;"><img src="https://github.com/user-attachments/assets/8bb86395-0116-4ef1-9abc-9a9a9e5b4b9f" width="800"/><br>Fig 5. Seasonal density and oxygen profiles in 5 terminal inlets.</p><br>
+
+I need to spend more time with this figure. For now, a z = -6 m interface depth seems appropriate for Lynch Cove. Case Inlet and Budd Inlet appear to have the most variability between seasons. Elliot Bay has a very shallow interface depth.
 
 ---
 ## References
