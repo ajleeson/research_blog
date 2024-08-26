@@ -17,6 +17,7 @@ More details below.
 Following our discussion last week, I selected interface depths that were about 1/3 the total depth. The exceptions to this is Budd Inlet, in which I used 1/2 the total depth instead of 1/3 because this inlet is very shallow.
 
 The resulting interface depths are:
+
 |Inlet     |Depth at moor|Interface Depth|
 |----------|-------------|---------------|
 |Lynch Cove|20 m         | 6 m           |
