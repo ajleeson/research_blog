@@ -1,4 +1,4 @@
-## Two-layer Volume and DO Budget in 5 Inlets
+## Two-layer Volume and DO Budgets in 5 Inlets
 
 This week I finished two-layer volume and DO budgets in 5 terminal inlets. They are listed below, along with their average Aug/Sep bottom DO concentrations in parentheses:
 - Lynch Cove (0.0 mg/L)
@@ -78,7 +78,7 @@ The Case Inlet error term also has a strange positive blip near the beginning of
 ---
 ## Budget bar charts
 
-Using the two-layer TEF budgets, I created bar charts of the average DO transports rates over the time intervals of one year (first row of Fig. 11), spring (second row of Fig. 11), and summer (third row of Fig. 11). 
+Using the two-layer TEF budgets, I created bar charts of the average DO transport rates over the time intervals of one year (first row of Fig. 11), spring (second row of Fig. 11), and summer (third row of Fig. 11). 
 
 These rate terms are volume-averaged, meaning that I divided the volume-integrated rates by the average volume of each layer over the same time period. 
 
@@ -93,7 +93,7 @@ I was hoping that these bar charts would show a clear difference between the hyp
 
 After zooming into the bar charts, it seems that respration is the next largest term behind the exchange flow and vertical exchange. I am hypothesizing that the ratio of respiration to DO sources is larger in hypoxic inlets compared to oxygenated inlets. Furthermore, I hypothesize that this large ratio of respiration to DO sources begins earlier in the year in hypoxic inlets compared to oxygenated inlets.
 
-To test this hypothesis, I plotted a time series of the ratio of respiration to the source terms. The source terms include TRAPS, photosynthesis, and a residual term, which is the sum of the exchange flow and vertical exchange terms. Note that this residual term appears to always be positive (i.e., a source).
+To test this hypothesis, I plotted a time series of the ratio of respiration to the source terms. The source terms include TRAPS, photosynthesis, and a residual term, which is the sum of the exchange flow and vertical exchange terms.
 
 $$ DO\ usage\ ratio = \frac{Respiration}{TRAPS + photosynthesis + (TEF + vertical\ exchange)}$$
 
@@ -106,6 +106,6 @@ Rather, I'd like to use this opportunity to discuss other options for analysis.
 - Start writing again!
 - Continue analyzing budgets. What makes hypoxic inlets different than oxygenated inlets??
 - Investigate sensitivity to depth?
-    - I could by remaking volume budgets, which would take less time than the DO budgets.
+    - I could start by remaking volume budgets, which would take less time than the DO budgets.
     - Look at TEF interface depth compared to salinity profile over time at all 5 inlets
 - Extend prior scatter plot analysis through 2019 (dots are average of 2014-2019, and error bars to indicate standard deviation)
