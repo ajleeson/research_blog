@@ -89,6 +89,18 @@ I have also listed the inlets in ascending order of average Aug/Sep bottom DO.
 I was hoping that these bar charts would show a clear difference between the hypoxic and oxygenated inlets, but alas, that is not the case.
 
 ---
+## How do we continue this analysis?
+
+After zooming into the bar charts, it seems that respration is the next largest term behind the exchange flow and vertical exchange. I am hypothesizing that the ratio of respiration to DO sources is larger in hypoxic inlets compared to oxygenated inlets. Furthermore, I hypothesize that this large ratio of respiration to DO sources begins earlier in the year in hypoxic inlets compared to oxygenated inlets.
+
+To test this hypothesis, I plotted a time series of the ratio of respiration to the source terms. The source terms include TRAPS, photosynthesis, and a residual term, which is the sum of the exchange flow and vertical exchange terms. Note that this residual term appears to always be positive (i.e., a source).
+
+$$ DO\ usage\ ratio = \frac{Respiration}{TRAPS + photosynthesis + (TEF + vertical\ exchange)}$$
+
+I am not showing the resulting figure, as it didn't tell me much...
+Rather, I'd like to use this opportunity to discuss other options for analysis.
+
+---
 ## Next steps
 
 - Start writing again!
