@@ -84,7 +84,7 @@ These rate terms are volume-averaged, meaning that I divided the volume-integrat
 
 I have also listed the inlets in ascending order of average Aug/Sep bottom DO. 
 
-<p style="text-align:center;"><img src="https://github.com/user-attachments/assets/56e4a947-896c-45fa-b9cb-9cfa0aa6f328" width="800"/><br>Fig 11. Bar charts of volume-averaged DO transport rates in 5 terminal inlets.</p><br>
+<p style="text-align:center;"><img src="https://github.com/user-attachments/assets/56e4a947-896c-45fa-b9cb-9cfa0aa6f328" width="900"/><br>Fig 11. Bar charts of volume-averaged DO transport rates in 5 terminal inlets.</p><br>
 
 I was hoping that these bar charts would show a clear difference between the hypoxic and oxygenated inlets, but alas, that is not the case.
 
@@ -99,6 +99,13 @@ $$ DO\ usage\ ratio = \frac{Respiration}{TRAPS + photosynthesis + (TEF + vertica
 
 I am not showing the resulting figure, as it didn't tell me much...
 Rather, I'd like to use this opportunity to discuss other options for analysis.
+
+---
+## Bar charts with combined horizontal and vertical exchange
+
+Figure 12 shows another budget bar chart, but this time using the net sum of the TEF exchange and the vertical exchange, which I've labeled "residual."
+
+<p style="text-align:center;"><img src="https://github.com/user-attachments/assets/e47b57b2-cde4-4289-a0f2-3be731b1ca9d" width="900"/><br>Fig 12. Bar charts of volume-averaged DO transport rates in 5 terminal inlets, with horizontal and vertical exchange combined in one term.</p><br>
 
 ---
 ## Next steps
