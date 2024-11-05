@@ -11,9 +11,9 @@ Below I have summarized my remaining questions for the thesis and listed some ne
 
 1. I will include another example inlet in the model evaluation section. Is it still valuable to include Lynch Cove?
 2. Should I omit shallow inlets from the analysis in the thesis, or wait for the paper?
-3. What is a good term to represent DO concentration? C_DO? I will otherwise try to be more explicity about DO concentration vs. volume-integrated DO.
+3. What is a good term to represent DO concentration? C_DO? I will otherwise try to be more explicit about DO concentration vs. volume-integrated DO.
 4. Does anyone know of a good reference for the cost of the WWTP upgrade?
-5. Difference between Tres and Tflush in MacCready et al. (2021). I had thought that what I call "Tres," is what MacCready et al. (2021) calls "Tflush." 
+5. Difference between Tres and Tflush in MacCready et al. (2021). I think what I call "Tres" is what MacCready et al. (2021) calls "Tflush." 
 6. How do I justify the depth of the interface?
 7. Can I now put my figures within the main body of the text, or is it still best practice to put them at the end?
 8. Chair of the supervisory committee? 
