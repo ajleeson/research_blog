@@ -15,7 +15,7 @@ Below I have summarized my remaining questions for the thesis and listed some ne
 4. Does anyone know of a good reference for the cost of the WWTP upgrade?
 5. Difference between Tres and Tflush in MacCready et al. (2021). I think what I call "Tres" is what MacCready et al. (2021) calls "Tflush." 
 6. How do I justify the depth of the interface?
-7. Can I now put my figures within the main body of the text, or is it still best practice to put them at the end?
+7. Is it okay to leave the figures at the end of the text?
 8. Chair of the supervisory committee? 
 
 
