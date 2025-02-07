@@ -50,11 +50,11 @@ This means that no matter how strong the exchange flow is in an inlet, the net e
 
 For the entire inlet, we can write a simplified DO budget equation as:
 
-$\frac{\partial}{\partial t}(DO) = exchange + photosynthesis + consumption + airsea + rivers$
+$$\frac{\partial}{\partial t}(DO) = exchange + photosynthesis + consumption + airsea + rivers$$
 
 We can modify this equation based on our findings so far. First, we know that the exchange flow is a constant loss term of oxygen that is the same amongst all inlet. So, we can replace exchange with -0.062 mg/L day-1. Second, we have found that in all inlets, consumption scales linearly with photosynthesis by a factor of -0.559. Thus:
 
-$\frac{\partial}{\partial t}(DO) = -0.062 \ \mathrm{mg\ L^{-1}day^{-1}} + 0.441(photosynthesis) + airsea + rivers$
+$$\frac{\partial}{\partial t}(DO) = -0.062 \ \mathrm{mg\ L^{-1}day^{-1}} + 0.441(photosynthesis) + airsea + rivers$$
 
 ---
 ## Next steps
