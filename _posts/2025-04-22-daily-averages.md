@@ -20,15 +20,15 @@ Then, I pushed these artificial daily averages through the rest of the tef2 proc
 
 Generally, the seasonal profiles of the hourly and daily-averaged fluxes are quite similar. Figure 1 shows an example comparison at the mouth of Carr Inlet, which has particulalry similar flux timeseries.
 
-<p style="text-align:center;"><img src="figures/2025.04.22/carr.png" width="700"/><br>Fig 1. Comparison of hourly TEF and daily-averaged fluxes through Carr Inlet. Panel (a) compares Qin. Panel (b) compares QinDOin. Panel (c) compares QinDINin. Under every panel is a timeseries of the hourly minus the daily time series.</p><br>
+<p style="text-align:center;"><img src="/research_blog/figures/2025.04.22/carr.png" width="700"/><br>Fig 1. Comparison of hourly TEF and daily-averaged fluxes through Carr Inlet. Panel (a) compares Qin. Panel (b) compares QinDOin. Panel (c) compares QinDINin. Under every panel is a timeseries of the hourly minus the daily time series.</p><br>
 
 However, the daily-averages sometimes overestimated the inflowing fluxes relative to the hourly TEF values. An example is Penn Cove (Figure 2).
 
-<p style="text-align:center;"><img src="figures/2025.04.22/penn.png" width="700"/><br>Fig 2. Comparison of hourly TEF and daily-averaged fluxes through Penn Cove. Panel (a) compares Qin. Panel (b) compares QinDOin. Panel (c) compares QinDINin. Under every panel is a timeseries of the hourly minus the daily time series.</p><br>
+<p style="text-align:center;"><img src="/research_blog/figures/2025.04.22/penn.png" width="700"/><br>Fig 2. Comparison of hourly TEF and daily-averaged fluxes through Penn Cove. Panel (a) compares Qin. Panel (b) compares QinDOin. Panel (c) compares QinDINin. Under every panel is a timeseries of the hourly minus the daily time series.</p><br>
 
 Dyes Inlet is the only inlet that is giving me particular trouble. It almost appears as though something in the processing scripts is clipping the daily-average data (Figure 3).
 
-<p style="text-align:center;"><img src="figures/2025.04.22/dyes.png" width="700"/><br>Fig 3. Comparison of hourly TEF and daily-averaged fluxes through Dyes Inlet. Panel (a) compares Qin. Panel (b) compares QinDOin. Panel (c) compares QinDINin. Under every panel is a timeseries of the hourly minus the daily time series.</p><br>
+<p style="text-align:center;"><img src="/research_blog/figures/2025.04.22/dyes.png" width="700"/><br>Fig 3. Comparison of hourly TEF and daily-averaged fluxes through Dyes Inlet. Panel (a) compares Qin. Panel (b) compares QinDOin. Panel (c) compares QinDINin. Under every panel is a timeseries of the hourly minus the daily time series.</p><br>
 
 ---
 ## Remaining to-dos before beginning run
