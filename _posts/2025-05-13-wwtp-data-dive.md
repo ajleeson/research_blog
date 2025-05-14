@@ -92,4 +92,4 @@ Lastly, I need to decide how to calculate climatologies for all WWTPs. Several W
 
 **Experiment design**
 
-Not all WWTPs are covered under the (now void) Nutrient General Permit. For instance, Canadian WWTPs do not apply. My original plan was to set nutrient concentrations of all WWTPs to zero. A new, alternative, idea is to set only the PSNG WWTPs to zero. 
+Not all WWTPs are covered under the (now void) Nutrient General Permit. For instance, Canadian WWTPs do not apply. My original plan was to set nutrient concentrations of all WWTPs to zero. A new, alternative, idea is to set only the PSNGP WWTPs to zero. 
