@@ -76,7 +76,7 @@ In the proposed experiment, we are only omitting the dashed yellow line [E], whi
 ---
 ## What's next?
 
-I have been careful about my directory and file naming convention and organization to prepare for a clean WWTP integration into LiveOcean. Hopefully ths actual integration process should be straigtforward from here on out.
+I have been careful about my directory and file naming convention and organization to prepare for a clean WWTP integration into LiveOcean. Hopefully this actual integration process should be straigtforward from here on out.
 
 Some final questions that I'm still mulling over:
 
