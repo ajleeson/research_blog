@@ -13,9 +13,10 @@ This blog post serves as a checklist for all the little loose ends that I need t
     - [ ] Recompile ROMS after git pull?
 <br><br>
 
-- [ ] Increase nudging to climatology
-    - [ ] Create nudgecoef.nc file for *all* biogeochemistry variables
-    - [ ] Update nudgecoef.nc file name in BLANK.in
+- [x] Increase nudging to climatology
+    - [x] Create nudgecoef.nc file for *all* biogeochemistry variables
+    - [x] Update nudgecoef.nc file name in BLANK.in
+    - [x] Copy nudgecoef.nc file into LO_data on apogee
 <br><br>
 
 - [ ] Set up dot in folder
