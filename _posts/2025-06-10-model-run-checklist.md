@@ -7,15 +7,15 @@ This blog post serves as a checklist for all the little loose ends that I need t
     - [x] Use new fennel.h with 50% particle burial and corrected carbon burial 
 <br><br>
 
-- [ ] Get latest version of ROMS
+- [x] Get latest version of ROMS
     - [x] Delete older varinfo files on local pc/perigee/apogee
-    - [ ] Git pull latest version of ROMS on klone <span style="color:red">(Do this once hyak maintenance is complete!)</span>
-    - [ ] Recompile ROMS after git pull?
+    - [x] Git pull latest version of ROMS on klone
+    - [x] Recompile ROMS after git pull?
 <br><br>
 
 - [x] Increase nudging to climatology
-    - [x] Create nudgecoef.nc file for *all* biogeochemistry variables
-    - [x] Update nudgecoef.nc file name in BLANK.in
+    - [x] Create nudgcoef.nc file for *all* biogeochemistry variables
+    - [x] Update nudgcoef.nc file name in BLANK.in (to nudgcoef_tracer100.nc)
     - [x] Copy nudgecoef.nc file into LO_data on apogee
 <br><br>
 
