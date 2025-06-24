@@ -46,7 +46,7 @@ This blog post serves as a checklist for all the little loose ends that I need t
 - [x] SCP files in LO_data/grids/cas7 into klone?
 <br><br>
 
-- [ ] Launch model run
+- [x] Launch model run
     - [x] Email Parker before-hand to get final confirmation of resources
     - [x] Check with Jilian about resources
     - [x] Use start type "newcontinuation"
