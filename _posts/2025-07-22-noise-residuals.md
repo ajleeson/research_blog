@@ -9,7 +9,7 @@ Although I was unable to finish all my ensemble runs, this blog post describes t
 
 For my test experiments, I had previously been comparing a run with no nutrients from West Point to a run with nutrient from West Point. After one day of run time, the surface and bottom difference in NH4 shows signs of noise (Figure 1).
 
-<p style="text-align:center;"><img src="../figures/2025.07.22/pcolormesh.png" width="800"/><br>Fig 1. Comparison of NH4 concentration after one day of run time between the two runs (West Point minus no-West Point). The left panel shows surface differences. The right panel shows bottom differences. The pink circle denotes the location of West Point WWTP.</p><br>
+<p style="text-align:center;"><img src="/research_blog/figures/2025.07.22/pcolormesh.png" width="800"/><br>Fig 1. Comparison of NH4 concentration after one day of run time between the two runs (West Point minus no-West Point). The left panel shows surface differences. The right panel shows bottom differences. The pink circle denotes the location of West Point WWTP.</p><br>
 
 ---
 ## New analysis figure
@@ -22,7 +22,7 @@ The bottom panel plots the same information, except the y-axis now uses a log-sc
 
 What stands out to me is the peak near the 20 km distance in the bottom panel. My hunch is that this noise corresponds to Sinclair Inlet in Figure 1. It is roughly two orders of magnitude smaller than the actual NH4 signal near West Point.
 
-<p style="text-align:center;"><img src="../figures/2025.07.22/residuals.png" width="600"/><br>Fig 2. Residuals of NH4 (i.e. With West Point run minus no West Point run). </p><br>
+<p style="text-align:center;"><img src="/research_blog/figures/2025.07.22/residuals.png" width="600"/><br>Fig 2. Residuals of NH4 (i.e. With West Point run minus no West Point run). </p><br>
 
 My idea is to make similar figures for all of the test conditions listed in the following section, and my goal is to identify the scale of the biogeochemisty noise floor. I expect that a small enough nutrient concentration discharge from West Point will cause Figure 2 to appear flat. A flat trend would imply that the signal of NH4 is smaller than the biogeochemistry noise. 
 
