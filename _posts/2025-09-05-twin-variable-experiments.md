@@ -89,7 +89,7 @@ Figure 11 shows the evolution of the difference in dye concentrations over the c
 ---
 ## Hypothesis 4: Noise is related to bit-precision and significant figures
 
-My latest hypothesis is that noise is related to the bit-precision of the model and the amound of significant figures it can carry around. 
+My latest hypothesis is that noise is related to the bit-precision of the model and the amount of significant figures it can carry around. 
 
 To illustrate, let's assume that the model can only store 7 significant figures. If we have zero background dye concentration, then all 7 significant figures are able to capture the tiny differences due to our tiny forcing input changes (because the most significant bit is a tiny number). However, if the background concentration of dye is large, then these 7 significant figures begin at a larger value, and are thus unable to resolve the tiny differences due to our forcing changes. 
 
