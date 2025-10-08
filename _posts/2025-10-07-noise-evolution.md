@@ -21,7 +21,7 @@ The pcolormesh is very similar to the figures that Parker shared with us before.
 
 1. Sum all of the constituents in the NPZD module (NO3, NH4, phytoplankton, zooplankton, large & small detritus) to obtain total nitrogen (TN) in each grid cell
 2. Vertically integrate TN at every grid cell in the model domain
-3. Multiple vertical integrals of TN by the horizontal area of each grid cell to obtain TN in mmol at every lat/lon location in the model domain.
+3. Multiply vertical integrals of TN by the horizontal area of each grid cell to obtain TN in mmol at every lat/lon location in the model domain.
 4. Calculate the difference in TN \[mmol\] between the "loading" run and the "no-loading" run at every lat/lon location of the model domain
 5. Normalize the colorbar scale by dividing by the **maximum difference in TN [mmol] between the two runs** (i.e., the largest signal)
 
@@ -44,19 +44,19 @@ The right panel is identical to the bottom panel, except I summed TN differences
 ---
 ## Evolution of Boundary Noise (one year)
 
-The temporal resolution of this video is one frame per week of model time. In total video spans nearly one year of model time. 
+The temporal resolution of this video is one frame per week of model time. In total, the video spans nearly one year of model time. 
 
 <p style="text-align:center;"><video src="/research_blog/figures/2025.10.07/full_domain_year.mp4" controls="controls" style="max-width: 800px;"></video><br>Fig. 2 Evolution of normalized TN differences at a weekly interval for one year. Colorbar limits of the pcolormesh range from -10% to 10%.</p>
 <br>
 
-I notice that the noise on the boundaries is occaionally on the order of 10% of the signal we are interested in. This feels a little too large for comfort. However, it is not apparent that this large boundary noise makes its way into the Salish Sea. 
+I noticed that the noise on the boundaries is occaionally on the order of 10% of the signal we are interested in. This feels a little too large for comfort. However, it is not apparent that this large boundary noise makes its way into the Salish Sea. 
 
 The large boundary noise is perhaps acceptable for our WWTP loading experiment since we will zoom into Puget Sound for our analysis, but the large noise will likely cause problems for a mCDR study conducted across the entire LiveOcean domain.
 
 ---
 ## Evolution of Puget Sound Noise (two weeks)
 
-The temporal resolution of these videos are one frame per day of model time, spanning a tota of two weeks.
+The temporal resolution of these videos are one frame per day of model time, spanning a total of two weeks.
 
 In Figure 3, I maintain colorbar limits ranging from -10% to 10%, and all I can observe is a TN signal propagating from the WWTP locations.
 
