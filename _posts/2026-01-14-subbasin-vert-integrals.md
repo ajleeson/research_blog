@@ -1,4 +1,4 @@
-## Sub-basin Vertical Integrals
+## Sub-basin Integrals
 
 Before the holidays, Kate and I came up with some initial analysis plans for the WWTP loading experiments. My primary objective was to assess how different sub-basins in Puget Sound respond to the WWTP  loading. Though I haven't completed everything on our checklist, here is a quick update on what I have so far.
 
