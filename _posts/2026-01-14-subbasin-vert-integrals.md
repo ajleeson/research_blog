@@ -30,7 +30,7 @@ When we consider just the new version of LiveOcean and look at Hood Canal and So
 
 Lastly, I plotted volume integrals of each of the NPZD+O parameter over each basin. These figures are a work in progress, so for now I am only showing volume integrals of NO3 (Figure 4). Apologies for the messy and overlapping labeling.
 
-<p style="text-align:center;"><img src="../figures/2026.01.14/NO3_vol_int.png" width="800"/><br>Fig 4. NO3 volume integrals in Puget Sound, Hood Canal, and South Sound from 2014-2017. The purple line corresponds to the loading run, and the dashed black line corresponds to the no-loading run. The difference between the runs (loading minus no-loading) is plotted in red below each panel.</p><br>
+<p style="text-align:center;"><img src="/research_blog/figures/2026.01.14/NO3_vol_int.png" width="800"/><br>Fig 4. NO3 volume integrals in Puget Sound, Hood Canal, and South Sound from 2014-2017. The purple line corresponds to the loading run, and the dashed black line corresponds to the no-loading run. The difference between the runs (loading minus no-loading) is plotted in red below each panel.</p><br>
 
 The difference between the loading and no-loading runs (red lines) have a seasonal cycle.
 
