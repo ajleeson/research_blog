@@ -6,10 +6,10 @@ A big thank you to Kate for helping with the masking scripts that partition Puge
 My major takeaways from this analysis so far are:
 - South Sound has the highest DO concentrations and the largest amount of phytoplankton growth. 
 - In general, WWTP loads seems to increase nutrient concentrations, delay and intensify phytoplankton blooms, and decrease DO.
-- Hood Canal has the lowest DO concentrations and the least phytoplankton growth of any basin, and WWTP loading has the smallest impact on Hood Canal in terms of nutrient and phytoplankton concentrations. However, WWTP loading causes a spatially uniform DO response in all basins (including Hood Canal) during the summer. My hypothesis is that detritus produced in the other basins gets advected into Hood Canal where it subsequently get consumed.
+- Hood Canal has the lowest DO concentrations and the least phytoplankton growth of any basin, and WWTP loading has the smallest impact on Hood Canal in terms of nutrient and phytoplankton concentrations. However, WWTP loading causes a spatially uniform DO response in all basins (including Hood Canal) during the summer. My hypothesis is that detritus produced in the other basins gets advected into Hood Canal where it subsequently gets consumed.
 - Whidbey Basin and Main Basin have similar NPZD+O profiles in the no-loading run, but their respones to WWTP loading diverges
     - WWTP loading increase Main Basin NH4 concentrations twice as much compared to Whidbey Basin
-    - Whibey Basin's DO response to WWTP loading is most similar to Hood Canal
+    - Whibey Basin's DO response to WWTP loading is most similar to Hood Canal's
 
 
 More details of the analyses are below.
@@ -42,12 +42,12 @@ WWTPs generally increase NH4 concentrations in all basins (Figure 2c). Main Basi
 
 In the no-loading run, there is the least amount of phytoplankton growth in Hood Canal, three times more in South Sound, and middle levels in Whidbey and Main Basins (Figure 3b). These patterns are consistent with the lower summer NO3 concentrations in South Sound, and generally higher NO3 concentrations in Hood Canal.
 
-WWTP loading appears to delay the onset of phytoplankton blooms in South Sound, Whidbey Basin, and Main Basin (Figure 3c), as indicated by the negative difference values near the start of the year. The blooms also appear to be more intense, as indicated by the positive difference values during the summer. I am not sure why increased loading causes this change in bloom timing. I am also curious whether the total amount of phytoplankton differs between the two runs, which I can investigate using cumulative sum plots in the future. It is worth noting that Hood Canal phytoplankton blooms are minimally impacted by WWTP relative to the other basins. I wonder whether the Hood Canal summer increase in NH4 (Figure 2c) is thus due to NH4 being advected into Hood Canal from Main Basin. 
+WWTP loading appears to delay the onset of phytoplankton blooms in South Sound, Whidbey Basin, and Main Basin (Figure 3c), as indicated by the negative difference values near the start of the year. The blooms also appear to be more intense, as indicated by the positive difference values during the summer. I am not sure why increased loading causes this change in bloom timing. I am also curious whether the total amount of phytoplankton differs between the two runs, which I can investigate using cumulative sum plots in the future. It is worth noting that Hood Canal phytoplankton blooms are minimally impacted by WWTPs relative to the other basins. I wonder whether the Hood Canal summer increase in NH4 (Figure 2c) is thus due to NH4 being advected into Hood Canal from Main Basin. 
 
 
 <p style="text-align:center;"><img src="/research_blog/figures/2026.01.27/Phyto.png" width="800"/><br>Fig 3. Average phytoplankton concentration in the different basins of Puget Sound. (a) Delineation of basin boundaries and location & discharge of WWTPs. (b) Average concentration in the no-loading run, partitioned by basin. The black dashed line represents the whole of Puget Sound. (c) Difference between the loading run and no-loading run average concentrations. </p><br>
 
-Zooplankton trends are shown in Figure 4 for posterity, but I do not have much commentary to add. Zooplankton patterns across the patterns largely follow the phytoplankton patterns.
+Zooplankton trends are shown in Figure 4, but I do not have much commentary to add. Zooplankton patterns across the patterns largely follow the phytoplankton patterns.
 
 <p style="text-align:center;"><img src="/research_blog/figures/2026.01.27/Zoop.png" width="800"/><br>Fig 4. Average zooplankton concentration in the different basins of Puget Sound. (a) Delineation of basin boundaries and location & discharge of WWTPs. (b) Average concentration in the no-loading run, partitioned by basin. The black dashed line represents the whole of Puget Sound. (c) Difference between the loading run and no-loading run average concentrations. </p><br>
 
@@ -73,7 +73,7 @@ The difference patterns of large detritus due to WWTPs (Figure 6c), is otherwise
 
 In the no-loading run, Hood Canal has much less oxygen compared to the other basins (Figure 7b). South Sound has the most oxygen, and Whidbey Basin and Main Basin have similar mid-level oxygen concentations.
 
-WWTP loading decreases DO in all of the basins (Figure 7c). Despite having similar patterns for the other NPZD+O variables, Whidbey Basin and Main Basin have a different DO response to WWTP loading. In fact, Whidbey Basin's DO response is most simlar to Hood Canals, and Main Basin has more semblance to South Sound. Why? I'm not sure, and it is worth further exploration.
+WWTP loading decreases DO in all of the basins (Figure 7c). Despite having similar patterns for the other NPZD+O variables, Whidbey Basin and Main Basin have a different DO response to WWTP loading. In fact, Whidbey Basin's DO response is most simlar to Hood Canals, and Main Basin has more resemblance to South Sound. Why? I'm not sure, and it is worth further exploration.
 
 <p style="text-align:center;"><img src="/research_blog/figures/2026.01.27/DO.png" width="800"/><br>Fig 7. Average dissolved oxygen concentration in the different basins of Puget Sound. (a) Delineation of basin boundaries and location & discharge of WWTPs. (b) Average concentration in the no-loading run, partitioned by basin. The black dashed line represents the whole of Puget Sound. (c) Difference between the loading run and no-loading run average concentrations. </p><br>
 
@@ -84,6 +84,6 @@ WWTP loading decreases DO in all of the basins (Figure 7c). Despite having simil
 - Merge the time series together before passing them through the Hanning Window filter. This will eliminate the weird gap in data at the beginning and end of every year
 - Calculate the percent increase in land-based nutrient loads due to WWTPs, and compare that to the percent change in total nutrients in Puget Sound
 - Plot bottom DO concentration maps (average, min concentration, and variability)
-- Plot cumulative NPZD+O time 
+- Plot cumulative sum NPZD+O time series
 - Re-run one year with hourly output so I can calculate TEF fluxes of NPZD+O variables at the basin boundaries. 
     - I will later need to adjust my basin boundaries so they match the TEF section locations. This should minimally impact the results presented in this blog post.
