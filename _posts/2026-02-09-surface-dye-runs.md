@@ -5,6 +5,9 @@ By this point, I have run one successful surface dye experiment. Daily snapshots
 <p style="text-align:center;"><video src="/research_blog/figures/2026.02.09/feb_spring_surf10m_daily_his0001.mp4" controls="controls" style="max-width: 500px;"></video><br>Fig. 1 Vertically-integrated dye concentration in the top 10 m of the water column. The video is composed of daily snapshots at the start of each simulation day from 2020.02.08 to 2020.02.21. The simulation starts during a spring tide.</p>
 <br>
 
+<p style="text-align:center;"><video src="/research_blog/figures/2026.02.09/feb_spring_vertint_daily_his0001.mp4" controls="controls" style="max-width: 500px;"></video><br>Fig. 2 Vertically-integrated dye concentration over the entire water column. The video is composed of daily snapshots at the start of each simulation day from 2020.02.08 to 2020.02.21. The simulation starts during a spring tide.</p>
+<br>
+
 This blog post covers planned simulation dates, required steps to run surface dye experiments, and details of the dye implementation.
 
 ---
