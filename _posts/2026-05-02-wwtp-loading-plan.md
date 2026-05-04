@@ -92,7 +92,7 @@ To answer the first question, we need to understand where mixing occurs. I propo
 
 At this depth, we can then approximate the flux of NH4 using the gradient-diffusion hypothesis:
 
-$Flux = -AK_s \cdot \frac{\partial}{\partial z} (NH_4)$ 
+$$Flux = -AK_s \cdot \frac{\partial}{\partial z} (NH_4)$$ 
 
 where AKs is the eddy diffusivity, which is a ROMS output. Note that AKs is the eddy diffusivity for salt, and I am using it as a proxy for the eddy diffusivity of biological tracers (which is not one of the LO output variables).
 
