@@ -12,7 +12,7 @@ I am still looking towards additional analysis to complete before PECS.
 
 My primary investigation has been to understand the underlying mechanisms responsible for the spatial variability of WWTP impact to DO. 
 
-As a reminder, WWTP nutrients generally decrease nutrients everywhere across Puget Sound, but inlets in South Sound and Whidbey Basin appear to be more susecptible to WWTP nutrients than elsewhere in the estuary (Figure 1).
+As a reminder, WWTP nutrients generally decrease DO everywhere across Puget Sound, but inlets in South Sound and Whidbey Basin appear to be more susecptible to WWTP nutrients than elsewhere in the estuary (Figure 1).
 
 <p style="text-align:center;"><img src="/research_blog/figures/2026.07.24/bottomDO_map_Aug.png" width="700"/><br>Fig 1. (a) Climatological mean bottom DO concentration in the No-loading run during the month of August (averaged over the years 2015-2020). (b) Difference in climatological mean August bottom DO between Loading and No-loading runs.</p><br>
 
@@ -21,9 +21,9 @@ As a reminder, WWTP nutrients generally decrease nutrients everywhere across Pug
 
 ### Phytoplankton blooms
 
-One major part this investigation is answering "why does DO decrease in Puget Sound due to WWTP nutrients?" I thought that the answer to this question would be obvious: "WWTP nutrients increase the amount of phytoplankton blooms, which produces more organic matter than gets respired." However, the answer to this question appears to be more nuanced. 
+One major part this investigation is answering "why does DO decrease in Puget Sound due to WWTP nutrients?" I thought that the answer to this question would be obvious: "WWTP nutrients increase the amount of phytoplankton blooms, which produces more organic matter that gets respired." However, the answer to this question appears to be more nuanced. 
 
-Figure 2 shows a comparison of average phytoplankton concentration in each basin between 2015 through 2020 between the Loading and No-loading runs. Every single year, the spring phytoplankton blooms are larger in the Loading run than the No-loading run. However, this pattern flips during the summer blooms, where the Loading run has large blooms than the No-loading run. These results suggest that WWTP nutrients do not solely alter the magnitude of blooms, but they also alter the timing of blooms. In particular, the timing of the blooms appear to be shifted later in the year.
+Figure 2 shows a comparison of average phytoplankton concentration in each basin between 2015 through 2020 between the Loading and No-loading runs. Every single year, the spring phytoplankton blooms are larger in the No-loading run than in the Loading run. However, this pattern flips during the summer blooms, where the Loading run has large blooms than the No-loading run. These results suggest that WWTP nutrients do not solely alter the magnitude of blooms, but they also alter the timing of blooms. In particular, the timing of the blooms appear to be shifted later in the year.
 
 <p style="text-align:center;"><img src="/research_blog/figures/2026.01.27/Phyto.png" width="800"/><br>Fig 2. Average phytoplankton concentration in the different basins of Puget Sound. (a) Delineation of basin boundaries and location & discharge of WWTPs. (b) Average concentration in the no-loading run, partitioned by basin. The black dashed line represents the whole of Puget Sound. (c) Difference between the loading run and no-loading run average concentrations. </p><br>
 
@@ -33,15 +33,15 @@ For now, my leading hypothesis for why the Loading run has lower DO is because W
 
 ### Changes to NPZD+O fluxes between basins
 
-I tried to understand why South Sound and Whidbey Basin are more strongly impact by WWTP nutrients by considering TEF fluxes of NPZD+O variables between the basin boundaries.
+I tried to understand why South Sound and Whidbey Basin are more strongly impacted by WWTP nutrients by considering TEF fluxes of NPZD+O variables between the basin boundaries.
 
-Figure 3 shows an example time series of NPZD+O TEF fluxes into Whidbey Basin over the year 2013.
+Figure 3 shows an example time series of NPZD+O TEF fluxes into Whidbey Basin over the year 2017.
 
 <p style="text-align:center;"><img src="/research_blog/figures/2026.07.24/whidbey_transports.png" width="800"/><br>Fig 3. 2017 TEF fluxes of NPZD+O variables through the boundaries of Whidbey Basin. Basin boundaries are color-coded on the map, where red corresponds to Deception Pass and black corresponds to Possession Sound. Light-colored, solid lines are the No-loading run and dark-colored, dashed lines are the Loading run. The sign convention is that positive fluxes are going into the basin, while negative fluxes go out of the basin. The fluxes are net fluxes, and are the sum of inflow and outflow.</p><br>
 
-In general, I found the differences between the Loading and No-loading runs to be impossible to make out on this time series. Thus, I converted this flux information into something that provides more opportunities for interpretations.
+In general, I found the differences between the Loading and No-loading runs to be impossible to make out on this time series. Thus, I converted this flux information into something that provides more opportunities for interpretation...
 
-Figure 4 shows maps of TEF fluxes for all of the NPZD+O state variables. All of the gray arrows are the average TEF flux during the year 2017 (imagine taking the average of the lines in Figure 3), while the red and blue colored arrows indicate a strengthening or weakening of the flux due to WWTP loads, respectively. 
+Figure 4 shows maps of TEF fluxes for all of the NPZD+O state variables. All of the gray arrows are the average TEF fluxes during the year 2017 (imagine taking the average of the lines in Figure 3), while the red and blue colored arrows indicate a strengthening or weakening of the flux due to WWTP loads, respectively. 
 
 This map allows me to pick out which TEF fluxes are more strongly impacted by WWTP loads. Fluxes that stand out to me are the strengthening of NH4 and large detritus loading into Whidbey Basin and South Sound due to the introduction of WWTP nutrients. Perhaps more NH4 fuels stronger blooms in these basins, or perhaps more large detritus leads to stronger oxygen consumption.
 
