@@ -90,6 +90,20 @@ Something worth considering is whether we should include an offshore site to rep
 ---
 ## Mixed layer depth
 
+The depth of the surface mixed layer tells us how deep alkalinity additions will be mixed in the water column. The deeper the mixed layer depth, the less surface retention there is. 
+
+Surface mixed layer depth was calculated by Kate Hewett (thanks Kate!) using the threshold method. Here, the surface of the mixed layer is the thickness of the surface waters where density is within 0.125 kg/m3 of the surface density value. Figure 11 shows climatological mean surface mixed layer depth in Feb, May, Aug, and Nov.
+
+<p style="text-align:center;"><img src="../figures/2026.05.04/monthly_sml.png" width="900"/><br>Fig 11. Average surface mixed layer depth (threshold of 0.125 kg/m3) across 10 years of simulations (2015-2020) during the months of Feb, May, Aug, and Nov. Circles denote the locations of the seven sites under consideration.</p><br>
+
+Seasonally, surface mixed layer depth is deeper during the winter months and shallower during the summer months.
+
+The surface mixed layer depth is shallower near river plumes like the Columbia, Fraser, and Skagit. It is also shallower in Hood Canal (Fig. 12).
+
+<p style="text-align:center;"><img src="../figures/2026.05.04/timeseries_sml.png" width="700"/><br>Fig 12. Surface mixed layer depth climatologies at each of the seven sites under consideration.</p><br>
+
+Tofino, south of the San Juan Islands, and Quadra Island have deep mixed layer depths during the winter. During the summer, mixed layer depth near Quadra Island shoals to values similar to the river-influences sites. However, Tofino and sout of San Juan Islands remains deeper (though still shallower than winter months).
+
 ---
 ## Tidal currents
 
