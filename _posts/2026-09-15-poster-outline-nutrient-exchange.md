@@ -12,7 +12,7 @@ DO reaches dangerously low levels in several reaches of Puget Sound, most notabl
 
 ## Methods: LiveOcean modeling experiment
 
-Models serve as a tool to help understand what would occur if we could hypothetically turn WwTPs on and off. While models are useful, they are not exact truth, and we should interpret them with caution and curiosity. 
+Models serve as a tool to help understand what would occur if we could hypothetically turn WWTPs on and off. While models are useful, they are not exact truth, and we should interpret them with caution and curiosity. 
 
 <p style="text-align:center;"><img src="/research_blog/figures/2026.09.15/model_domain.png" width="300"/><br></p><br>
 
